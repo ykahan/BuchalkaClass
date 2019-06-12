@@ -33,6 +33,7 @@ public class NewArray {
                     break;
                 } else {
                     newArray[oldArrayIndex] = oldValue;
+//                    printArray(newArray);
                 }
             }
         }

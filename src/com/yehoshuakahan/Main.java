@@ -8,6 +8,6 @@ public class Main {
         na.printArray();
         int[] sorted = na.sortArray();
         int[] reversed = na.reverseArray(sorted);
-        na.printArray(reversed);
+        na.printArray(sorted);
     }
 }
