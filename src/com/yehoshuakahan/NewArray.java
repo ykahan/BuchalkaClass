@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class NewArray {
     private int[] ints;
+    private static Scanner scanner = new Scanner(System.in);
 
     public void getIntegers() {
         int arrayLength = howManyIntegers();
@@ -11,6 +12,7 @@ public class NewArray {
         for (int i = 0; i < arrayLength; i++) {
             ints[i] = getInt();
         }
+        scanner.close();
     }
 
     public int[] sortArray() {
