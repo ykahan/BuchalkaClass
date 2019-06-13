@@ -22,8 +22,7 @@ public class NewArray {
     public int[] sortArray(int[] oldArray) {
         int length = oldArray.length;
         int[] newArray = new int[length];
-        newArray[0] = oldArray[0];
-        for (int oldArrayIndex = 1; oldArrayIndex < length; oldArrayIndex++) {
+        for (int oldArrayIndex = 0; oldArrayIndex < length; oldArrayIndex++) {
             int oldValue = oldArray[oldArrayIndex];
             for (int newArrayIndex = 0; newArrayIndex < length; newArrayIndex++) {
                 int newValue = newArray[newArrayIndex];
