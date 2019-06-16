@@ -41,13 +41,14 @@ public class NewArray {
         return newArray;
     }
 
-    public int[] reverseArray(int[] oldArray){
-        int length = oldArray.length;
-        int[] newArray = new int[length];
-        for(int i = 0; i < length; i++){
-            newArray[length - 1 - i] = oldArray[i];
+    public void reverseArray(int[] array){
+        int temp = 0;
+        int length = array.length;
+        for(int i = 0; i < length / 2; i++){
+            temp = array[i];
+            array[i] = array[length - 1 - i];
+            array[length - 1 - i] = temp;
         }
-        return newArray;
     }
 
     public void printArray() {
