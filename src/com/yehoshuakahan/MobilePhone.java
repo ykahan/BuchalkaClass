@@ -70,6 +70,8 @@ public class MobilePhone {
                 scanner.nextLine();
                 processUserInput(command);
             } else if(!nextIsInt){
+                scanner.nextLine();
+                System.out.println("That is not a valid input");
                 requestCommand();
             }
         }
