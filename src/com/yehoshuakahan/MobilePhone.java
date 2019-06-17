@@ -27,9 +27,12 @@ public class MobilePhone {
     }
 
     public void processUserInput(int response) {
-        String name;
-        String number;
+        String newName;
+        String newNumber;
+        String oldName;
         Contact contact;
+        boolean exists;
+        int index;
         switch (response) {
             case (1):
                 printInstructions();
@@ -40,40 +43,49 @@ public class MobilePhone {
                 requestCommand();
                 break;
             case (3):
-                contact = receiveContact();
+                contact = receiveContact(true);
                 addContact(contact);
                 requestCommand();
                 break;
             case (4):
-                name = receiveName();
-                boolean exists = list.contactExists(name);
+                newName = receiveName(false);
+                exists = list.contactExists(newName);
                 if (exists) {
-                    number = receivePhoneNumber();
-                    editContact(name, number);
+                    newNumber = receivePhoneNumber();
+                    editContact(newName, newNumber);
                 } else {
-                    System.out.println("Contact not found.");
+                    contactNotFoundError();
                 }
                 requestCommand();
                 break;
             case (5):
-                name = receiveName();
-                removeContact(name);
+                oldName = receiveName(false);
+                exists = list.contactExists(oldName);
+                if (exists) {
+                    removeContact(oldName);
+                    System.out.println("Contact removed.");
+                } else {
+                    contactNotFoundError();
+                }
                 requestCommand();
                 break;
             case (6):
-                System.out.println("Number of contact to be replaced.");
-                if (scanner.hasNextInt()) {
-                    int num = scanner.nextInt() - 1;
-                    scanner.nextLine();
-                    contact = receiveContact();
-                    replaceContact(num, contact);
-                    System.out.println("Old contact replaced with new contact.");
+                System.out.println("Name of contact to be replaced.");
+                oldName = scanner.nextLine();
+                exists = this.list.contactExists(oldName);
+                if (exists) {
+                    newName = receiveName(true);
+                    newNumber = receivePhoneNumber();
+                    contact = receiveNewContact(newName, newNumber);
+                    this.list.replaceContact(oldName, contact);
                 } else {
-                    System.out.println("Invalid input");
+                    contactNotFoundError();
                 }
                 requestCommand();
                 break;
             case (7):
+                System.out.println("Quitting Program Now");
+                endProgram();
                 break;
             default:
                 printInstructions();
@@ -81,22 +93,26 @@ public class MobilePhone {
         }
     }
 
-    private Contact receiveContact() {
+    public void endProgram() {
+
+    }
+
+    public void contactNotFoundError() {
+        System.out.println("Contact Not Found");
+    }
+
+    private Contact receiveContact(boolean newContact) {
         String name;
         String number;
-        name = receiveName();
-        number = receivePhoneNumber();
+        name = receiveName(true);
+        if (!newContact) number = this.list.getPhoneNumber(name);
+        else number = receivePhoneNumber();
         Contact contact = new Contact(name, number);
         return contact;
     }
 
-    public void replaceContact(int index, Contact newContact) {
-        this.list.replaceContact(index, newContact);
-    }
-
     public void requestCommand() {
-        System.out.println("Next command?  Enter \"1\"" +
-                "\" for instructions");
+        System.out.println("Next command?  Enter \"1\" for instructions");
         boolean nextIsInt = scanner.hasNextInt();
         if (nextIsInt) {
             int command = scanner.nextInt();
@@ -117,14 +133,17 @@ public class MobilePhone {
         this.list.editContact(name, number);
     }
 
-    public String receiveName() {
-        System.out.println("Name:");
-        String name = scanner.nextLine();
-        return name;
+    public String receiveName(boolean newName) {
+        String query = "";
+        if (newName) query = "New Name:";
+        else query = "Existing Name:";
+        System.out.println(query);
+        query = scanner.nextLine();
+        return query;
     }
 
     public String receivePhoneNumber() {
-        System.out.println("Number:");
+        System.out.println("New Phone Number:");
         String number = scanner.nextLine();
         return number;
     }

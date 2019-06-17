@@ -18,6 +18,20 @@ public class ContactList {
         return false;
     }
 
+    public String getPhoneNumber(String name){
+        int size = list.size();
+        String phoneNumber = null;
+        for(int i = 0; i < size; i++){
+            Contact contact = list.get(i);
+            String contactName = contact.getName();
+            if(contactName.contentEquals(name)) {
+                phoneNumber = contact.getPhoneNumber();
+                break;
+            }
+        }
+        return phoneNumber;
+    }
+
     private void replaceContact(Contact oldContact, Contact newContact){
         int indexOld = getIndex(oldContact);
         if(indexOld < 0) System.out.println("Old contact not found.");
@@ -26,13 +40,15 @@ public class ContactList {
         }
     }
 
-    public void replaceContact(int index, Contact newContact){
-        int maxSize = this.list.size();
-        if (index <= maxSize - 1) {
-            Contact oldContact = findContact(index);
-            replaceContact(oldContact, newContact);
-        } else {
-            System.out.println("Contact not found.");
+    public void replaceContact(String oldName, Contact newContact){
+        int size = this.list.size();
+        for(int i = 0; i < size; i++){
+            Contact oldContact = this.list.get(i);
+            String foundName = oldContact.getName();
+            if(foundName.contentEquals(oldName)){
+                replaceContact(oldContact, newContact);
+                return;
+            }
         }
     }
 
@@ -81,12 +97,9 @@ public class ContactList {
                 String oldPhone = contact.getPhoneNumber().trim();
                 if (Name.contentEquals(oldName)) {
                     list.remove(i);
-                    System.out.println("Removing item");
                     break;
                 }
             }
-        } else if (!exists) {
-            System.out.println("No such contact found");
         }
     }
 
