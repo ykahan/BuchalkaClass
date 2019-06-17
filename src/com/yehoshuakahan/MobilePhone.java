@@ -112,7 +112,7 @@ public class MobilePhone {
     }
 
     public void requestCommand() {
-        System.out.println("Next command?  Enter \"1\" for instructions");
+        System.out.println("Next command?  Enter \"1\" if you need to review the instructions");
         boolean nextIsInt = scanner.hasNextInt();
         if (nextIsInt) {
             int command = scanner.nextInt();
