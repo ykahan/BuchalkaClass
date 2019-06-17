@@ -45,8 +45,13 @@ public class MobilePhone {
                 break;
             case (4):
                 name = receiveName();
-                number = receivePhoneNumber();
-                editContact(name, number);
+                boolean exists = list.contactExists(name);
+                if (exists) {
+                    number = receivePhoneNumber();
+                    editContact(name, number);
+                } else{
+                    System.out.println("Contact not found.");
+                }
                 requestCommand();
                 break;
             case (5):
@@ -63,44 +68,44 @@ public class MobilePhone {
     }
 
     public void requestCommand() {
-            System.out.println("Next command?  Enter \"1\" for instructions");
-            boolean nextIsInt = scanner.hasNextInt();
-            if (nextIsInt) {
-                int command = scanner.nextInt();
-                scanner.nextLine();
-                processUserInput(command);
-            } else if(!nextIsInt){
-                scanner.nextLine();
-                System.out.println("That is not a valid input");
-                requestCommand();
-            }
-        }
-
-        public void removeContact (String name){
-            this.list.removeContact(name);
-        }
-
-        public void editContact (String name, String number){
-            this.list.editContact(name, number);
-        }
-
-        public String receiveName () {
-            System.out.println("Name:");
-            String name = scanner.nextLine();
-            return name;
-        }
-
-        public String receivePhoneNumber () {
-            System.out.println("Number:");
-            String number = scanner.nextLine();
-            return number;
-        }
-
-        public void addContact (String name, String number){
-            this.list.addContact(name, number);
-        }
-
-        public void printContactList () {
-            this.list.printAllContacts();
+        System.out.println("Next command?  Enter \"1\" for instructions");
+        boolean nextIsInt = scanner.hasNextInt();
+        if (nextIsInt) {
+            int command = scanner.nextInt();
+            scanner.nextLine();
+            processUserInput(command);
+        } else if (!nextIsInt) {
+            scanner.nextLine();
+            System.out.println("That is not a valid input");
+            requestCommand();
         }
     }
+
+    public void removeContact(String name) {
+        this.list.removeContact(name);
+    }
+
+    public void editContact(String name, String number) {
+        this.list.editContact(name, number);
+    }
+
+    public String receiveName() {
+        System.out.println("Name:");
+        String name = scanner.nextLine();
+        return name;
+    }
+
+    public String receivePhoneNumber() {
+        System.out.println("Number:");
+        String number = scanner.nextLine();
+        return number;
+    }
+
+    public void addContact(String name, String number) {
+        this.list.addContact(name, number);
+    }
+
+    public void printContactList() {
+        this.list.printAllContacts();
+    }
+}

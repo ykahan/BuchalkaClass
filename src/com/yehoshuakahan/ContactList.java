@@ -5,17 +5,14 @@ import java.util.Scanner;
 
 public class ContactList {
     private ArrayList<Contact> list = new ArrayList<Contact>();
-    private static Scanner scanner = new Scanner(System.in);
 
-    private boolean contactExists(String Name) {
+    public boolean contactExists(String Name) {
         Name = Name.trim();
-//        System.out.println("Requested Name {" + Name + "}");
         int size = list.size();
         for (int i = 0; i < size; i++) {
             Contact contact = list.get(i);
             String oldName = contact.getName();
             oldName = oldName.trim();
-//            System.out.println("Found Name: {" + oldName + "}");
             if (oldName.contentEquals(Name)) return true;
         }
         return false;
@@ -29,7 +26,6 @@ public class ContactList {
     }
 
 
-
     public void addContact(String Name, String phoneNumber) {
         Name = Name.trim();
         phoneNumber = phoneNumber.trim();
@@ -37,50 +33,28 @@ public class ContactList {
         if (!alreadyExists) {
             Contact contact = new Contact(Name, phoneNumber);
             list.add(contact);
-        }
-    }
-
-    private void removeContact(String Name, String phoneNumber) {
-        Name = Name.trim();
-        phoneNumber = phoneNumber.trim();
-        int size = list.size();
-        boolean exists = contactExists(Name);
-        boolean removed = false;
-        if (exists) {
-            for (int i = 0; i < size; i++) {
-                Contact contact = list.get(i);
-                String oldName = contact.getName().trim();
-                String oldPhone = contact.getPhoneNumber().trim();
-                if (Name.contentEquals(oldName) && phoneNumber.contentEquals(oldPhone)) {
-                    list.remove(i);
-                    System.out.println("Removing item");
-                    removed = true;
-                    break;
-                }
-            }
-        }
-        if (exists && !removed) {
-            System.out.println("Phone number not found.  Do you want to try again? y/n");
-            String response = scanner.nextLine();
-            if (response.toLowerCase().contentEquals("y")) {
-                System.out.println("What is the new phone number?");
-                String newNumber = scanner.nextLine().trim();
-                removeContact(Name, newNumber);
-            } else{
-                System.out.println("Ok, not trying again.");
-            }
-        } else if (!exists) {
-            System.out.println("No such contact found");
+        } else{
+            System.out.println("Contact already exists.");
         }
     }
 
     public void removeContact(String Name) {
         Name = Name.trim();
+        int size = list.size();
         boolean exists = contactExists(Name);
         if (exists) {
-            System.out.println("Please add the phone number of the contact you wish to remove.");
-            String phoneNumber = scanner.nextLine().trim();
-            removeContact(Name, phoneNumber);
+            for (int i = 0; i < size; i++) {
+                Contact contact = list.get(i);
+                String oldName = contact.getName().trim();
+                String oldPhone = contact.getPhoneNumber().trim();
+                if (Name.contentEquals(oldName)) {
+                    list.remove(i);
+                    System.out.println("Removing item");
+                    break;
+                }
+            }
+        } else if (!exists) {
+            System.out.println("No such contact found");
         }
     }
 
@@ -97,6 +71,8 @@ public class ContactList {
                     contact.setPhoneNumber(newPhoneNumber);
                 }
             }
+        } else {
+            System.out.println("Contact not found");
         }
     }
 
