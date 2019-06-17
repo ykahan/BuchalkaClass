@@ -18,6 +18,22 @@ public class ContactList {
         return false;
     }
 
+    public void replaceContact(Contact oldContact, Contact newContact){
+        int indexOld = getIndex(oldContact);
+        if(indexOld < 0) System.out.println("Old contact not found.");
+        else{
+            this.list.set(indexOld, newContact);
+        }
+    }
+
+    public int getSize(){
+        return this.list.size();
+    }
+
+    public Contact findContact(int index){
+        return this.list.get(index);
+    }
+
     public void reportContactExists(String name) {
         name = name.trim();
         boolean exists = contactExists((name));
@@ -36,6 +52,12 @@ public class ContactList {
         } else{
             System.out.println("Contact already exists.");
         }
+    }
+
+    public void addContact(Contact contact){
+        String name = contact.getName();
+        String number = contact.getPhoneNumber();
+        addContact(name, number);
     }
 
     public void removeContact(String Name) {

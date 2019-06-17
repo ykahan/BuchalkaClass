@@ -19,7 +19,8 @@ public class MobilePhone {
         System.out.println("Enter 3 To Add A Contact");
         System.out.println("Enter 4 To Edit A Contact");
         System.out.println("Enter 5 To Remove A Contact");
-        System.out.println("Enter 6 To Quit The Program");
+        System.out.println("Enter 6 To Replace An Old Contact With A New Contact");
+        System.out.println("Enter 7 To Quit The Program");
         int response = scanner.nextInt();
         scanner.nextLine();
         processUserInput(response);
@@ -28,6 +29,7 @@ public class MobilePhone {
     public void processUserInput(int response) {
         String name;
         String number;
+        Contact contact;
         switch (response) {
             case (1):
                 printInstructions();
@@ -38,9 +40,8 @@ public class MobilePhone {
                 requestCommand();
                 break;
             case (3):
-                name = receiveName();
-                number = receivePhoneNumber();
-                addContact(name, number);
+                contact = receiveContact();
+                addContact(contact);
                 requestCommand();
                 break;
             case (4):
@@ -49,7 +50,7 @@ public class MobilePhone {
                 if (exists) {
                     number = receivePhoneNumber();
                     editContact(name, number);
-                } else{
+                } else {
                     System.out.println("Contact not found.");
                 }
                 requestCommand();
@@ -60,10 +61,42 @@ public class MobilePhone {
                 requestCommand();
                 break;
             case (6):
+                System.out.println("Number of contact to be replaced.");
+                if (scanner.hasNextInt()) {
+                    int num = scanner.nextInt() - 1;
+                    scanner.nextLine();
+                    contact = receiveContact();
+                    replaceContact(num, contact);
+                    System.out.println("Old contact replaced with new contact.");
+                } else {
+                    System.out.println("Invalid input");
+                }
+                requestCommand();
+                break;
+            case (7):
                 break;
             default:
                 printInstructions();
                 break;
+        }
+    }
+
+    private Contact receiveContact() {
+        String name;
+        String number;
+        name = receiveName();
+        number = receivePhoneNumber();
+        Contact contact = new Contact(name, number);
+        return contact;
+    }
+
+    public void replaceContact(int index, Contact newContact) {
+        int maxSize = this.list.getSize();
+        if (index <= maxSize - 1) {
+            Contact oldContact = this.list.findContact(index);
+            this.list.replaceContact(oldContact, newContact);
+        } else {
+            System.out.println("Contact not found.");
         }
     }
 
@@ -101,8 +134,13 @@ public class MobilePhone {
         return number;
     }
 
-    public void addContact(String name, String number) {
-        this.list.addContact(name, number);
+    public Contact receiveNewContact(String name, String number) {
+        Contact contact = new Contact(name, number);
+        return contact;
+    }
+
+    public void addContact(Contact contact) {
+        this.list.addContact(contact);
     }
 
     public void printContactList() {
