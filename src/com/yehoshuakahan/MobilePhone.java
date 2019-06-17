@@ -91,17 +91,12 @@ public class MobilePhone {
     }
 
     public void replaceContact(int index, Contact newContact) {
-        int maxSize = this.list.getSize();
-        if (index <= maxSize - 1) {
-            Contact oldContact = this.list.findContact(index);
-            this.list.replaceContact(oldContact, newContact);
-        } else {
-            System.out.println("Contact not found.");
-        }
+        this.list.replaceContact(index, newContact);
     }
 
     public void requestCommand() {
-        System.out.println("Next command?  Enter \"1\" for instructions");
+        System.out.println("Next command?  Enter \"1\"" +
+                "\" for instructions");
         boolean nextIsInt = scanner.hasNextInt();
         if (nextIsInt) {
             int command = scanner.nextInt();

@@ -18,11 +18,21 @@ public class ContactList {
         return false;
     }
 
-    public void replaceContact(Contact oldContact, Contact newContact){
+    private void replaceContact(Contact oldContact, Contact newContact){
         int indexOld = getIndex(oldContact);
         if(indexOld < 0) System.out.println("Old contact not found.");
         else{
             this.list.set(indexOld, newContact);
+        }
+    }
+
+    public void replaceContact(int index, Contact newContact){
+        int maxSize = this.list.size();
+        if (index <= maxSize - 1) {
+            Contact oldContact = findContact(index);
+            replaceContact(oldContact, newContact);
+        } else {
+            System.out.println("Contact not found.");
         }
     }
 
