@@ -1,5 +1,8 @@
 package com.yehoshuakahan.OOP_Master_Challenge;
 
+import java.math.BigDecimal;
+import java.text.NumberFormat;
+
 public class Hamburger {
     private Roll roll;
     private Meat meat;
@@ -28,9 +31,22 @@ public class Hamburger {
         }
     }
 
-    public void removeAddition(Topping remove){
+    public void switchMeat(Meat newMeat){
+        this.price -= this.meat.getPrice();
+        this.price += newMeat.getPrice();
+        this.meat = newMeat;
+    }
+
+    public void switchBread(Roll newRoll){
+        this.price -= this.roll.getPrice();
+        this.price += newRoll.getPrice();
+        this.roll = newRoll;
+    }
+
+    public void removeTopping(Topping topping){
+        if(!canRemoveTopping()) return;
         for(int i = 0; i < toppings.length; i++){
-                if(toppings[i] == remove){
+                if(toppings[i].getClass() == topping.getClass()){
                     this.price -= toppings[i].getPrice();
                     toppings[i] = null;
                     break;
@@ -38,10 +54,11 @@ public class Hamburger {
         }
     }
 
-    public void addAddition(Topping newAdd){
+    public void addTopping(Topping topping){
+        if(!canAddTopping()) return;
         for(int i = 0; i < toppings.length; i++){
             if(toppings[i] == null){
-                toppings[i] = newAdd;
+                toppings[i] = topping;
                 this.price += toppings[i].getPrice();
                 break;
             }
@@ -57,17 +74,33 @@ public class Hamburger {
         return false;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("\nBasic hamburger on " + this.roll.getName() + " with " +
-                this.meat.getName() + " and the following additions:");
-        for (Topping topping: toppings) {
-            if (topping != null) {
-                sb.append("\n" + topping.getName());
+    public boolean canRemoveTopping(){
+        for(int i = 0; i < toppings.length; i++){
+            if(toppings[i] != null) {
+                return true;
             }
         }
-        sb.append("\nTotal cost: $" + this.price);
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        NumberFormat formatter = NumberFormat.getCurrencyInstance();
+        String displayPrice = formatter.format(this.price);
+        StringBuilder sb = new StringBuilder();
+        sb.append("\nBasic hamburger on ");
+        sb.append(this.roll.getName());
+        sb.append(" with ");
+        sb.append(this.meat.getName());
+        sb.append(" and the following additions:");
+        for (Topping topping: toppings) {
+            if (topping != null) {
+                sb.append("\n");
+                sb.append(topping.getName());
+            }
+        }
+        sb.append("\nTotal cost: ");
+        sb.append(displayPrice);
 
         return sb.toString();
     }
