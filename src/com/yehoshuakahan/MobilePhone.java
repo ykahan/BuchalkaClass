@@ -85,7 +85,7 @@ public class MobilePhone {
                 break;
             case (7):
                 System.out.println("Quitting Program Now");
-                endProgram();
+//                endProgram();
                 break;
             default:
                 printInstructions();

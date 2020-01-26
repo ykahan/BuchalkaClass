@@ -1,35 +1,22 @@
 package com.yehoshuakahan;
 
 public class PC {
-    private Case theCase;
+    private Case shell;
     private Monitor monitor;
     private Motherboard motherboard;
 
-    public PC(Case theCase, Monitor monitor, Motherboard motherboard) {
-        this.theCase = theCase;
+    public PC(Case shell, Monitor monitor, Motherboard motherboard) {
+        this.shell = shell;
         this.monitor = monitor;
         this.motherboard = motherboard;
     }
 
+    private void drawLogo(){
+        monitor.drawPixel(100, 200, "green");
+    }
+
     public void powerUp(){
-        theCase.pressPowerButton();
+        shell.pressPowerButton();
         drawLogo();
     }
-
-    private void drawLogo(){
-        monitor.drawPixelAt(1200, 50, "yellowish green");
-    }
-
-    public Case getTheCase() {
-        return theCase;
-    }
-
-    public Monitor getMonitor() {
-        return monitor;
-    }
-
-    public Motherboard getMotherboard() {
-        return motherboard;
-    }
 }
-

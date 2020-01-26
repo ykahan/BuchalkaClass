@@ -11,19 +11,6 @@ public class Dimensions {
         this.depth = depth;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Width: " + width);
-        sb.append("\nHeight: " + height);
-        sb.append("\nDepth: " + depth);
-        return sb.toString();
-    }
-
-    public void printDimensions(){
-        System.out.println(toString());
-    }
-
     public int getWidth() {
         return width;
     }

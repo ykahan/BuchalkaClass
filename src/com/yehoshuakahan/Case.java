@@ -17,19 +17,19 @@ public class Case {
         System.out.println("Power button pressed");
     }
 
-    private String getModel() {
+    public String getModel() {
         return model;
     }
 
-    private String getManufacturer() {
+    public String getManufacturer() {
         return manufacturer;
     }
 
-    private String getPowerSupply() {
+    public String getPowerSupply() {
         return powerSupply;
     }
 
-    private Dimensions getDimensions() {
+    public Dimensions getDimensions() {
         return dimensions;
     }
 }

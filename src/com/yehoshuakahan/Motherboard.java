@@ -1,30 +1,30 @@
 package com.yehoshuakahan;
 
 public class Motherboard {
-    private String manufacturer;
     private String model;
+    private String manufacturer;
     private int ramSlots;
     private int cardSlots;
     private String bios;
 
-    public Motherboard(String manufacturer, String model, int ramSlots, int cardSlots, String bios) {
-        this.manufacturer = manufacturer;
+    public Motherboard(String model, String manufacturer, int ramSlots, int cardSlots, String bios) {
         this.model = model;
+        this.manufacturer = manufacturer;
         this.ramSlots = ramSlots;
         this.cardSlots = cardSlots;
         this.bios = bios;
     }
 
-    public void loadProgram(String name){
-        System.out.println(name + " is now loading");
-    }
-
-    public String getManufacturer() {
-        return manufacturer;
+    public void loadProgram(String programName){
+        System.out.println("Loading " + programName);
     }
 
     public String getModel() {
         return model;
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
     }
 
     public int getRamSlots() {

@@ -1,8 +1,9 @@
 package com.yehoshuakahan;
 
 public class Vehicle {
+    String name;
 
-    public void move(){
-        System.out.println("Vehicle.move() invoked");
+    public Vehicle(String name) {
+        this.name = name;
     }
 }

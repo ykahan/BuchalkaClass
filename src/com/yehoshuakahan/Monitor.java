@@ -4,16 +4,16 @@ public class Monitor {
     private String model;
     private String manufacturer;
     private int size;
-    private Resolution resolution;
+    private Resolution nativeResolution;
 
-    public Monitor(String model, String manufacturer, int size, Resolution resolution) {
+    public Monitor(String model, String manufacturer, int size, Resolution nativeResolution) {
         this.model = model;
         this.manufacturer = manufacturer;
         this.size = size;
-        this.resolution = resolution;
+        this.nativeResolution = nativeResolution;
     }
 
-    public void drawPixelAt(int x, int y, String color){
+    public void drawPixel(int x, int y, String color){
         System.out.println("Drawing " + color + " pixel at (" + x + ", " + y + ")");
     }
 
@@ -29,7 +29,7 @@ public class Monitor {
         return size;
     }
 
-    public Resolution getResolution() {
-        return resolution;
+    public Resolution getNativeResolution() {
+        return nativeResolution;
     }
 }
