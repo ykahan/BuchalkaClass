@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d56ce716-11ae-4a89-8887-e6d489b4093e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Encapsulation/Challenge/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Encapsulation/Challenge/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Encapsulation/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Encapsulation/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Polymorphism/Challenge/Bava_Basra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Polymorphism/Challenge/Brachos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Polymorphism/Challenge/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Polymorphism/Challenge/Masechta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Polymorphism/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RoomProject/Light.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RoomProject/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RoomProject/Window.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Unencapsulation/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Unencapsulation/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/Case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/Dimensions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/Dimensions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/MobilePhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/MobilePhone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/Monitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/Motherboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/Motherboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/PC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/PC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/Resolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/Resolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/Toyota.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Polymorphism/Challenge/Kesuvos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,17 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Polymorphism/Challenge/Brachos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Polymorphism/Challenge/Bava_Basra.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="68">
+              <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -71,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Polymorphism/Challenge/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -102,7 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/yehoshuakahan/Chair.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/Window.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/Lamp.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/Player.java" />
@@ -152,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/Polymorphism/Challenge/Masechta.java" />
         <option value="$PROJECT_DIR$/src/Polymorphism/Challenge/Brachos.java" />
         <option value="$PROJECT_DIR$/src/Polymorphism/Challenge/Bava_Basra.java" />
+        <option value="$PROJECT_DIR$/src/Polymorphism/Challenge/Kesuvos.java" />
         <option value="$PROJECT_DIR$/src/Polymorphism/Challenge/Main.java" />
       </list>
     </option>
@@ -186,6 +153,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="yehoshuakahan" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BuchalkaClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BuchalkaClass" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Polymorphism" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BuchalkaClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BuchalkaClass" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Polymorphism" type="462c0819:PsiDirectoryNode" />
+              <item name="Challenge" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -198,6 +178,11 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Polymorphism.Challenge" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -403,6 +388,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="22" width="1346" height="688" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.12830482" />
       <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.25718608" />
@@ -475,13 +461,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed requestCommand() message" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/Printer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="66" column="78" lean-forward="true" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/Room.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
@@ -789,24 +768,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Polymorphism/Challenge/Brachos.java">
+    <entry file="file://$PROJECT_DIR$/src/Polymorphism/Challenge/Bava_Basra.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Polymorphism/Challenge/Bava_Basra.java">
+    <entry file="file://$PROJECT_DIR$/src/Polymorphism/Challenge/Kesuvos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Polymorphism/Challenge/Brachos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Polymorphism/Challenge/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
