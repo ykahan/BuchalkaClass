@@ -2,15 +2,13 @@ package com.yehoshuakahan.OOP_Master_Challenge;
 
 public class Main {
     public static void main(String[] args) {
-        Hamburger burger = new Hamburger(new Whole_Wheat(), new Beef(), new Onions(), new Onions(), null, null);
-        System.out.println(burger.toString());
-        burger.switchBread(new White_Bread());
-        System.out.println(burger.toString());
-        burger.switchMeat(new Turkey());
-        System.out.println(burger.toString());
-        burger.removeTopping(new Onions());
-        System.out.println(burger.toString());
-        burger.addTopping(new Peppers());
-        System.out.println(burger.toString());
+        Hamburger burger1 = new Healthy_Burger(new Beef(), new Lettuce(), new Lettuce(), new Onions(), new Onions(),
+                new Peppers(), new Tomatoes());
+
+        Hamburger burger2 = new Basic_Burger(new White_Bread(), new Chicken(), new Lettuce(), new Onions(),
+                new Peppers(), new Tomatoes());
+
+        System.out.println("burger1 is a Healthy_Burger: " + burger1.isHealthyBurger());
+        System.out.println("burger2 is a Healthy_Burger: " + burger2.isHealthyBurger());
     }
 }

@@ -12,21 +12,26 @@ public class Hamburger {
     private Topping topping4;
     private double price;
     private Topping[] toppings;
+    private Side[] sides;
+    private int maxToppings;
+    private int maxSides;
 
-    public Hamburger(Roll roll, Meat meat, Topping topping1, Topping topping2, Topping topping3, Topping topping4) {
+    public Hamburger(Roll roll, Meat meat, Topping[] toppings, Side[] sides, int maxToppings, int maxSides, double price){
         this.roll = roll;
         this.meat = meat;
-        this.topping1 = topping1;
-        this.topping2 = topping2;
-        this.topping3 = topping3;
-        this.topping4 = topping4;
-        this.price = 1.0;
+        this.price = price;
+        this.maxToppings = maxToppings;
+        this.maxSides = maxSides;
         this.price += this.roll.getPrice();
         this.price += this.meat.getPrice();
-        toppings = new Topping[]{topping1, topping2, topping3, topping4};
-        for (Topping add : toppings) {
-            if (add != null) {
-                this.price += add.getPrice();
+        for (Topping topping : toppings) {
+            if (topping != null) {
+                this.price += topping.getPrice();
+            }
+        }
+        for(Side side: sides){
+            if(side != null){
+                this.price += side.getPrice();
             }
         }
     }
@@ -43,23 +48,27 @@ public class Hamburger {
         this.roll = newRoll;
     }
 
-    public void removeTopping(Topping topping){
+    private void removeTopping(Topping toppingToRemove){
         if(!canRemoveTopping()) return;
-        for(int i = 0; i < toppings.length; i++){
-                if(toppings[i].getClass() == topping.getClass()){
-                    this.price -= toppings[i].getPrice();
-                    toppings[i] = null;
-                    break;
-                }
+        for(Topping topping: toppings){
+            if (topping.getClass() == toppingToRemove.getClass()) {
+                this.price -= topping.getPrice();
+                topping = null;
+                break;
+            }
         }
     }
 
-    public void addTopping(Topping topping){
-        if(!canAddTopping()) return;
-        for(int i = 0; i < toppings.length; i++){
-            if(toppings[i] == null){
-                toppings[i] = topping;
-                this.price += toppings[i].getPrice();
+    public boolean isHealthyBurger(){
+        return this instanceof Healthy_Burger;
+    }
+
+    private void addTopping(Topping toppingToAdd){
+        if(!canAddTopping() || isHealthyBurger()) return;
+        for(Topping topping: toppings){
+            if (topping == null){
+                topping = toppingToAdd;
+                this.price += topping.getPrice();
                 break;
             }
         }
@@ -74,9 +83,9 @@ public class Hamburger {
         return false;
     }
 
-    public boolean canRemoveTopping(){
-        for(int i = 0; i < toppings.length; i++){
-            if(toppings[i] != null) {
+    private boolean canRemoveTopping(){
+        for(Topping topping: toppings){
+            if(topping != null){
                 return true;
             }
         }
@@ -92,7 +101,7 @@ public class Hamburger {
         sb.append(this.roll.getName());
         sb.append(" with ");
         sb.append(this.meat.getName());
-        sb.append(" and the following additions:");
+        sb.append(" and the following toppings:");
         for (Topping topping: toppings) {
             if (topping != null) {
                 sb.append("\n");
