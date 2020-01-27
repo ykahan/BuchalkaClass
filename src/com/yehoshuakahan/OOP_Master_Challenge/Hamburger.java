@@ -1,6 +1,5 @@
 package com.yehoshuakahan.OOP_Master_Challenge;
 
-import java.math.BigDecimal;
 import java.text.NumberFormat;
 
 public class Hamburger {
@@ -74,9 +73,9 @@ public class Hamburger {
         }
     }
 
-    public boolean canAddTopping(){
-        for(int i = 0; i < toppings.length; i++){
-            if(toppings[i] == null){
+    private boolean canAddTopping(){
+        for(Topping topping: toppings){
+            if(topping == null){
                 return true;
             }
         }
