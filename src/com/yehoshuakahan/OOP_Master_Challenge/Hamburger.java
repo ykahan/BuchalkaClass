@@ -1,111 +1,86 @@
 package com.yehoshuakahan.OOP_Master_Challenge;
 
 import java.text.NumberFormat;
+import java.util.ArrayList;
 
 public class Hamburger {
     private Roll roll;
     private Meat meat;
-    private Topping topping1;
-    private Topping topping2;
-    private Topping topping3;
-    private Topping topping4;
-    private double price;
-    private Topping[] toppings;
-    private Side[] sides;
-    private int maxToppings;
-    private int maxSides;
+    private double totalPrice;
+    private double basePrice;
+    private Toppings toppings;
+    private String baseName;
 
-    public Hamburger(Roll roll, Meat meat, Topping[] toppings, Side[] sides, int maxToppings, int maxSides, double price){
+
+    public Hamburger(Roll roll,
+                     Meat meat,
+                     Topping topping1,
+                     Topping topping2,
+                     Topping topping3,
+                     Topping topping4,
+                     double basePrice,
+                     String baseName) {
         this.roll = roll;
         this.meat = meat;
-        this.price = price;
-        this.maxToppings = maxToppings;
-        this.maxSides = maxSides;
-        this.price += this.roll.getPrice();
-        this.price += this.meat.getPrice();
-        for (Topping topping : toppings) {
-            if (topping != null) {
-                this.price += topping.getPrice();
-            }
-        }
-        for(Side side: sides){
-            if(side != null){
-                this.price += side.getPrice();
-            }
-        }
+        this.toppings = new Toppings(new Topping[]{topping1, topping2, topping3, topping4});
+        this.basePrice = basePrice;
+        this.totalPrice = 0.0;
+        this.baseName = baseName;
     }
 
-    public void switchMeat(Meat newMeat){
-        this.price -= this.meat.getPrice();
-        this.price += newMeat.getPrice();
+    public void switchMeat(Meat newMeat) {
         this.meat = newMeat;
+        setTotalPrice();
     }
 
-    public void switchBread(Roll newRoll){
-        this.price -= this.roll.getPrice();
-        this.price += newRoll.getPrice();
+    public void switchBread(Roll newRoll) {
         this.roll = newRoll;
+        setTotalPrice();
     }
 
-    private void removeTopping(Topping toppingToRemove){
-        if(!canRemoveTopping()) return;
-        for(Topping topping: toppings){
-            if (topping.getClass() == toppingToRemove.getClass()) {
-                this.price -= topping.getPrice();
-                topping = null;
-                break;
-            }
-        }
+    public void setTotalPrice() {
+        setTotalPrice(0.0);
     }
 
-    public boolean isHealthyBurger(){
+    public void setTotalPrice(double toAdd) {
+        this.totalPrice = this.basePrice;
+        this.totalPrice += this.roll.getPrice();
+        this.totalPrice += this.meat.getPrice();
+        this.totalPrice += this.toppings.getToppingsPrice();
+        this.totalPrice += toAdd;
+    }
+
+    public double getTotalPrice(){
+        return this.totalPrice;
+    }
+
+    public boolean isHealthyBurger() {
         return this instanceof Healthy_Burger;
-    }
-
-    private void addTopping(Topping toppingToAdd){
-        if(!canAddTopping() || isHealthyBurger()) return;
-        for(Topping topping: toppings){
-            if (topping == null){
-                topping = toppingToAdd;
-                this.price += topping.getPrice();
-                break;
-            }
-        }
-    }
-
-    private boolean canAddTopping(){
-        for(Topping topping: toppings){
-            if(topping == null){
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private boolean canRemoveTopping(){
-        for(Topping topping: toppings){
-            if(topping != null){
-                return true;
-            }
-        }
-        return false;
     }
 
     @Override
     public String toString() {
+        return toString("");
+    }
+
+    public String toString(String sides) {
+        setTotalPrice();
         NumberFormat formatter = NumberFormat.getCurrencyInstance();
-        String displayPrice = formatter.format(this.price);
+        String displayPrice = formatter.format(this.totalPrice);
         StringBuilder sb = new StringBuilder();
-        sb.append("\nBasic hamburger on ");
+        sb.append("\n");
+        sb.append(this.baseName);
+        sb.append(" hamburger on ");
         sb.append(this.roll.getName());
         sb.append(" with ");
         sb.append(this.meat.getName());
-        sb.append(" and the following toppings:");
-        for (Topping topping: toppings) {
-            if (topping != null) {
-                sb.append("\n");
-                sb.append(topping.getName());
-            }
+        if(toppings.hasToppings()) {
+            sb.append(" and the following toppings:");
+            sb.append(toppings.getToppingsNames());
+        }
+        if(sides.length() > 0) {
+            sb.append("\nThe following sides are also included:");
+            sb.append(sides);
         }
         sb.append("\nTotal cost: ");
         sb.append(displayPrice);

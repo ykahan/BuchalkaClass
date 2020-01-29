@@ -1,15 +1,32 @@
 package com.yehoshuakahan.OOP_Master_Challenge;
 
-public class Healthy_Burger extends Hamburger {
+public class Healthy_Burger extends Hamburger{
+    private Sides sides;
 
-    public Healthy_Burger(Meat meat, Topping topping1, Topping topping2, Topping topping3, Topping topping4,
-                          Topping topping5, Topping topping6){
+    public Healthy_Burger(Meat meat,
+                          Topping topping1, Topping topping2, Topping topping3, Topping topping4,
+                          Side side1, Side side2){
         super(new Brown_Rye(),
                 meat,
-                new Topping[]{topping1, topping2, topping3, topping4, topping5, topping6},
-                new Side[]{null},
-                6,
-                0,
-                1.5);
+                topping1,
+                topping2,
+                topping3,
+                topping4,
+                1.5,
+                "Healthy");
+        sides = new Sides(new Side[]{side1, side2},
+                false);
+    }
+
+    @Override
+    public void setTotalPrice() {
+        double toAdd = this.sides.getCostAllSides();
+        super.setTotalPrice(toAdd);
+    }
+
+    @Override
+    public String toString() {
+        String sides = this.sides.toString();
+        return super.toString(sides);
     }
 }
