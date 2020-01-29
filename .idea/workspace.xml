@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d56ce716-11ae-4a89-8887-e6d489b4093e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Burger_With_Sides.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Drink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/French_Fries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Onion_Rings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Toppings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Basic_Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Basic_Burger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Hamburger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Hamburger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Hamburger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -39,17 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Toppings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+            <state relative-caret-position="498">
+              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
             </state>
           </provider>
         </entry>
@@ -63,11 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="104">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -75,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -84,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="155">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -103,6 +96,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>toppings.t</find>
+      <find>add</find>
+      <find>toAdd</find>
+      <find>addSide</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,10 +154,10 @@
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Basic_Burger.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Burger_With_Sides.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Hamburger.java" />
-        <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java" />
-        <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java" />
+        <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java" />
+        <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java" />
+        <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java" />
       </list>
     </option>
   </component>
@@ -428,7 +424,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.12632374" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" weight="0.12632374" />
       <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.25718608" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -437,15 +433,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" x="35" y="453" width="1295" height="206" id="Run" order="2" type="FLOATING" visible="true" weight="0.44517186" />
+      <window_info anchor="bottom" x="35" y="453" width="1295" height="206" id="Run" order="2" type="FLOATING" weight="0.44517186" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49924356" weight="0.32733223" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49924356" weight="0.32569557" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -456,24 +452,24 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.25718608" />
-      <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.12632374" />
+      <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.25718608" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38134205" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" x="35" y="453" width="1295" height="206" id="Run" order="2" type="FLOATING" visible="true" weight="0.44517186" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49924356" weight="0.32733223" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -772,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Toppings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Basic_Burger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -793,38 +782,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Toppings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Hamburger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state relative-caret-position="187">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+        <state relative-caret-position="177">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
         </state>
       </provider>
     </entry>

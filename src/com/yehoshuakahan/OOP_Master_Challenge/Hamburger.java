@@ -63,6 +63,14 @@ public class Hamburger {
         return toString("");
     }
 
+    public void addTopping(Topping topping){
+        toppings.addTopping(topping);
+    }
+
+    public void removeTopping(Topping topping){
+        toppings.removeTopping(topping);
+    }
+
     public String toString(String sides) {
         setTotalPrice();
         NumberFormat formatter = NumberFormat.getCurrencyInstance();

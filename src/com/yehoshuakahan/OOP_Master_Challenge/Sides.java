@@ -18,32 +18,35 @@ public class Sides {
         return false;
     }
 
-    public double addSide(Side newSide){
+    public void addSide(Side newSide){
         double toAdd = 0.0;
         if(!this.sidesFixed) {
             for (int i = 0; i < sides.length; i++) {
                 if (sides[i] == null) {
                     sides[i] = newSide;
-                    toAdd = getCostAllSides();
-                    return toAdd;
+                    break;
+//                    toAdd = getCostAllSides();
+//                    toAdd = getCostAllSides();
+//                    return toAdd;
                 }
             }
         }
-        return toAdd;
+//        return toAdd;
     }
 
-    public double removeSide(Side oldSide){
-        double toSubtract = 0.0;
+    public void removeSide(Side oldSide){
+//        double toSubtract = 0.0;
         if(!this.sidesFixed) {
             for (int i = 0; i < sides.length; i++) {
                 if (sides[i].getClass() == oldSide.getClass()) {
-                    toSubtract = -1 * sides[i].getPrice();
+//                    toSubtract = -1 * sides[i].getPrice();
                     sides[i] = null;
-                    return toSubtract;
+                    break;
+//                    return toSubtract;
                 }
             }
         }
-        return toSubtract;
+//        return toSubtract;
     }
 
     public void switchSide(Side newSide, Side oldSide){

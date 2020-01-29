@@ -17,6 +17,7 @@ public class Deluxe_Burger extends Hamburger {
                 true);
     }
 
+
     @Override
     public String toString() {
         String sides = this.sides.toString();

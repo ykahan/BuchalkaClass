@@ -6,14 +6,14 @@ public class Main {
 //        System.out.println(pepper.getName());
 //        System.out.println(pepper.getPrice());
 
-        Hamburger deluxe = new Deluxe_Burger(
+        Deluxe_Burger deluxe = new Deluxe_Burger(
                 new White_Bread(),
                 new Beef(),
                 new Peppers(),
                 new Peppers(),
                 new Lettuce(),
                 null);
-        Hamburger healthy = new Healthy_Burger(
+        Healthy_Burger healthy = new Healthy_Burger(
                 new Chicken(),
                 new Onions(),
                 new Tomatoes(),
@@ -29,8 +29,28 @@ public class Main {
                 new Tomatoes(),
                 null);
 //
-        System.out.println(deluxe.toString());
+//        System.out.println(deluxe.toString());
+////        System.out.println(healthy.toString());
+////        System.out.println(regular.toString());
+//
+//        deluxe.switchMeat(new Chicken());
+//        System.out.println(deluxe.toString());
+//
+//        deluxe.switchMeat(new Turkey());
+//        System.out.println(deluxe.toString());
+//
+//        deluxe.addTopping(new Lettuce());
+//        System.out.println(deluxe.toString());
+//
+//        deluxe.removeTopping(new Lettuce());
+//        System.out.println(deluxe.toString());
+
         System.out.println(healthy.toString());
-        System.out.println(regular.toString());
+
+        healthy.removeSide(new Onion_Rings());
+        healthy.addSide(new Drink());
+        healthy.addSide(new French_Fries());
+        healthy.addSide(new Drink());
+        System.out.println(healthy.toString());
     }
 }
