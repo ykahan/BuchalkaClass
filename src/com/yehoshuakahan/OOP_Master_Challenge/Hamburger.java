@@ -11,7 +11,6 @@ public class Hamburger {
     private Toppings toppings;
     private String baseName;
 
-
     public Hamburger(Roll roll,
                      Meat meat,
                      Topping topping1,

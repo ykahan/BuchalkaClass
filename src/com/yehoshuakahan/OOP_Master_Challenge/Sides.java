@@ -35,18 +35,14 @@ public class Sides {
     }
 
     public void removeSide(Side oldSide){
-//        double toSubtract = 0.0;
         if(!this.sidesFixed) {
             for (int i = 0; i < sides.length; i++) {
                 if (sides[i].getClass() == oldSide.getClass()) {
-//                    toSubtract = -1 * sides[i].getPrice();
                     sides[i] = null;
                     break;
-//                    return toSubtract;
                 }
             }
         }
-//        return toSubtract;
     }
 
     public void switchSide(Side newSide, Side oldSide){

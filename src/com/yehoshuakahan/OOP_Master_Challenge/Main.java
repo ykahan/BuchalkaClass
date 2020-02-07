@@ -28,22 +28,6 @@ public class Main {
                 null,
                 new Tomatoes(),
                 null);
-//
-//        System.out.println(deluxe.toString());
-////        System.out.println(healthy.toString());
-////        System.out.println(regular.toString());
-//
-//        deluxe.switchMeat(new Chicken());
-//        System.out.println(deluxe.toString());
-//
-//        deluxe.switchMeat(new Turkey());
-//        System.out.println(deluxe.toString());
-//
-//        deluxe.addTopping(new Lettuce());
-//        System.out.println(deluxe.toString());
-//
-//        deluxe.removeTopping(new Lettuce());
-//        System.out.println(deluxe.toString());
 
         System.out.println(healthy.toString());
 
