@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d56ce716-11ae-4a89-8887-e6d489b4093e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Basic_Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Basic_Burger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Hamburger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Hamburger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Toppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Toppings.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -411,7 +405,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.12556732" />
       <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.25718608" />
