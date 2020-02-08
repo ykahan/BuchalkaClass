@@ -2,7 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d56ce716-11ae-4a89-8887-e6d489b4093e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Descending_Order_Arrays_Challenge/ArraysPrac.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Descending_Order_Arrays_Challenge/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Basic_Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Basic_Burger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Beef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Beef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Brown_Rye.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Brown_Rye.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Chicken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Deluxe_Burger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Drink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/French_Fries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/French_Fries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Hamburger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Hamburger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Healthy_Burger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Lettuce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Lettuce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Meat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Onion_Rings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Onion_Rings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Onions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Onions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Peppers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Peppers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Roll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Roll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Side.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Side.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Sides.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Tomatoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Tomatoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Topping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Topping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Toppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Toppings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Turkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Turkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/White_Bread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/White_Bread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Whole_Wheat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP_Master_Challenge/Whole_Wheat.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,67 +40,25 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="BuchalkaClass" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Hamburger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Toppings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Basic_Burger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="115" column="1" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java">
+        <entry file="file://$PROJECT_DIR$/src/Descending_Order_Arrays_Challenge/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Descending_Order_Arrays_Challenge/ArraysPrac.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -103,9 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/yehoshuakahan/Resolution.java" />
-        <option value="$PROJECT_DIR$/src/com/yehoshuakahan/Case.java" />
-        <option value="$PROJECT_DIR$/src/com/yehoshuakahan/Dimensions.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/PC.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/Main.java" />
         <option value="$PROJECT_DIR$/src/RoomProject/Table.java" />
@@ -154,6 +135,9 @@
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java" />
+        <option value="$PROJECT_DIR$/src/OOP_Master_Challenge/Healthy_Burger.java" />
+        <option value="$PROJECT_DIR$/src/Descending_Order_Arrays_Challenge/ArraysPrac.java" />
+        <option value="$PROJECT_DIR$/src/Descending_Order_Arrays_Challenge/Main.java" />
       </list>
     </option>
   </component>
@@ -213,13 +197,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Encapsulation.Main" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Descending_Order_Arrays_Challenge.Main" />
       <module name="BuchalkaClass" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Encapsulation.*" />
+          <option name="PATTERN" value="Descending_Order_Arrays_Challenge.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -267,11 +251,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yehoshuakahan.OOP_Master_Challenge.Main" />
+      <option name="MAIN_CLASS_NAME" value="OOP_Master_Challenge.Main" />
       <module name="BuchalkaClass" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yehoshuakahan.OOP_Master_Challenge.*" />
+          <option name="PATTERN" value="OOP_Master_Challenge.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -281,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -394,7 +378,7 @@
     <option name="localTasksCounter" value="14" />
     <servers />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -405,22 +389,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.12556732" />
-      <window_info id="Structure" order="1" sideWeight="0.5026455" side_tool="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49512196" visible="true" weight="0.12708019" />
+      <window_info id="Structure" order="1" sideWeight="0.50487804" side_tool="true" visible="true" weight="0.12708019" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.50487804" side_tool="true" weight="0.12708019" />
       <window_info x="26" y="323" width="1295" height="206" id="Run" order="7" side_tool="true" type="FLOATING" weight="0.44517186" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.49924356" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.49848714" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" sideWeight="0.49924356" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49924356" weight="0.32569557" />
@@ -477,16 +462,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed requestCommand() message" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/RoomProject/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BuchalkaClass.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/Monitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -624,21 +599,21 @@
     <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Cost.java" />
     <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/Hot_Dog_Bun.java" />
     <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/White_Bread.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Turkey.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Turkey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Meat.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Meat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Roll.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Roll.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
@@ -652,98 +627,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Onions.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Onions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Tomatoes.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Tomatoes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Lettuce.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Lettuce.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Beef.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Beef.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Topping.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Topping.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Whole_Wheat.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Whole_Wheat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/White_Bread.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/White_Bread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Chicken.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Chicken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Brown_Rye.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Brown_Rye.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Drink.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Drink.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Peppers.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Peppers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Side.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Side.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Onion_Rings.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Onion_Rings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/French_Fries.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/French_Fries.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
@@ -751,52 +726,66 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Burger_With_Sides.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Hamburger.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Hamburger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Toppings.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Toppings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
+        <state relative-caret-position="1700">
           <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Basic_Burger.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Basic_Burger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="493">
           <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Sides.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Sides.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
+        <state relative-caret-position="1955">
           <caret line="115" column="1" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Deluxe_Burger.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Deluxe_Burger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Healthy_Burger.java">
+    <entry file="file://$PROJECT_DIR$/src/OOP_Master_Challenge/Healthy_Burger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Descending_Order_Arrays_Challenge/ArraysPrac.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Descending_Order_Arrays_Challenge/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
