@@ -16,6 +16,7 @@ public class ArraysPrac {
                 i -= 1;
             }
         }
+        scanner = null;
         return array;
     }
 
