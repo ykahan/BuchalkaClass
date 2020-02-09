@@ -1,6 +1,4 @@
-package Descending_Order_Arrays_Challenge;
-
-import java.util.Arrays;
+package Arrays.Descending_Order_Arrays_Challenge;
 
 public class Main {
     public static void main(String[] args) {

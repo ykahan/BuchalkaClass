@@ -1,4 +1,4 @@
-package Descending_Order_Arrays_Challenge;
+package Arrays.Descending_Order_Arrays_Challenge;
 
 import java.util.Scanner;
 
@@ -10,10 +10,15 @@ public class ArraysPrac {
         int[] array = new int[numInts];
         for(int i = 0; i < numInts; i++){
             System.out.println("Integer?\r");
-            array[i] = Integer.parseInt(scanner.nextLine());
+            try {
+                array[i] = Integer.parseInt(scanner.nextLine());
+            } catch(Exception e){
+                i -= 1;
+            }
         }
         return array;
     }
+
 
     public int[] sortArray(int[] arr){
         int c = 0;
