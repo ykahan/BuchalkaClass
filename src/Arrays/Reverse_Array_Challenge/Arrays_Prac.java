@@ -30,7 +30,10 @@ public class Arrays_Prac {
         for(int i = 0; i < arr.length; i++){
             reversedArr[i] = arr[arr.length - 1 - i];
         }
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = reversedArr[i];
+        }
 
-        return reversedArr;
+        return arr;
     }
 }
