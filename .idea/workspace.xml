@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d56ce716-11ae-4a89-8887-e6d489b4093e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Arrays/Descending_Order_Arrays_Challenge/ArraysPrac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Arrays/Descending_Order_Arrays_Challenge/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BuchalkaClass/Descending_Order_Arrays_Challenge/ArraysPrac.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuchalkaClass/Descending_Order_Arrays_Challenge/ArraysPrac.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Arrays/Minimum_Element_Challenge/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Arrays/Descending_Order_Arrays_Challenge/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Arrays/Minimum_Element_Challenge/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -64,7 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/RoomProject/Window.java" />
         <option value="$PROJECT_DIR$/src/RoomProject/Wall.java" />
         <option value="$PROJECT_DIR$/src/RoomProject/Light.java" />
         <option value="$PROJECT_DIR$/src/Unencapsulation/Player.java" />
@@ -115,6 +120,7 @@
         <option value="$PROJECT_DIR$/src/Arrays/Descending_Order_Arrays_Challenge/ArraysPrac.java" />
         <option value="$PROJECT_DIR$/src/Arrays/Descending_Order_Arrays_Challenge/Descending_Order_Arrays_Challenge/ArraysPrac.java" />
         <option value="$PROJECT_DIR$/src/Arrays/Descending_Order_Arrays_Challenge/Main.java" />
+        <option value="$PROJECT_DIR$/src/Arrays/Minimum_Element_Challenge/Main.java" />
       </list>
     </option>
   </component>
@@ -141,6 +147,19 @@
               <item name="BuchalkaClass" type="b2602c69:ProjectViewProjectNode" />
               <item name="BuchalkaClass" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BuchalkaClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BuchalkaClass" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Arrays" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BuchalkaClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BuchalkaClass" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Arrays" type="462c0819:PsiDirectoryNode" />
+              <item name="Minimum_Element_Challenge" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -366,6 +385,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.290469" />
       <window_info id="Structure" order="1" sideWeight="0.502455" side_tool="true" visible="true" weight="0.290469" />
@@ -438,13 +458,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed requestCommand() message" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/Monitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yehoshuakahan/Case.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -762,6 +775,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Arrays/Minimum_Element_Challenge/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
     </entry>
