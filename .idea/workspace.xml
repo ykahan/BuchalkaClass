@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d56ce716-11ae-4a89-8887-e6d489b4093e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Arrays_Prac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Arrays_Prac.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,16 +46,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Arrays_Prac.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+            <state relative-caret-position="80">
+              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -147,8 +146,8 @@
         <option value="$PROJECT_DIR$/src/Arrays/Descending_Order_Arrays_Challenge/ArraysPrac.java" />
         <option value="$PROJECT_DIR$/src/Arrays/Minimum_Element_Challenge/ArraysPrac.java" />
         <option value="$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge.java" />
-        <option value="$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Arrays_Prac.java" />
         <option value="$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Main.java" />
+        <option value="$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Arrays_Prac.java" />
       </list>
     </option>
   </component>
@@ -826,17 +825,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Arrays_Prac.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Arrays/Reverse_Array_Challenge/Arrays_Prac.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
         </state>
       </provider>
     </entry>

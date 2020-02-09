@@ -26,6 +26,7 @@ public class Arrays_Prac {
     }
 
     public void reverseArray(int[] arr) {
+        // reverses the array in place
         int[] reversedArr = new int[arr.length];
         for(int i = 0; i < arr.length; i++){
             reversedArr[i] = arr[arr.length - 1 - i];
@@ -37,6 +38,7 @@ public class Arrays_Prac {
     }
 
     public int[] getReversedArray(int[] arr){
+        // gets a new array with the elements in the reverse order of the old one
         int[] reversedArr = new int[arr.length];
         for(int i = 0; i < arr.length; i++){
             reversedArr[i] = arr[arr.length - 1 - i];
