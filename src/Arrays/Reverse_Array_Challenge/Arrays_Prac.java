@@ -25,7 +25,7 @@ public class Arrays_Prac {
         return array;
     }
 
-    public int[] reverseArray(int[] arr) {
+    public void reverseArray(int[] arr) {
         int[] reversedArr = new int[arr.length];
         for(int i = 0; i < arr.length; i++){
             reversedArr[i] = arr[arr.length - 1 - i];
@@ -33,7 +33,14 @@ public class Arrays_Prac {
         for(int i = 0; i < arr.length; i++){
             arr[i] = reversedArr[i];
         }
+        reversedArr = null;
+    }
 
-        return arr;
+    public int[] getReversedArray(int[] arr){
+        int[] reversedArr = new int[arr.length];
+        for(int i = 0; i < arr.length; i++){
+            reversedArr[i] = arr[arr.length - 1 - i];
+        }
+        return reversedArr;
     }
 }
