@@ -151,8 +151,11 @@ public class CellularPhone {
     }
 
     private void addContact(String name, String phoneNumber) {
-        Contact contact = new Contact(name, phoneNumber);
-        contacts.add(contact);
+        Contact contact = Contact.createContact(name, phoneNumber);
+        int nameIndex = locateContact(name);
+        int numberIndex = locateContact(phoneNumber);
+        if(nameIndex > -1 && numberIndex > -1) contacts.add(contact);
+        else System.out.println("That contact already exists.");
     }
 
     private int locateContact(String id) {
@@ -168,7 +171,10 @@ public class CellularPhone {
 
     private void findContact(String id) {
         int index = locateContact(id);
-        if (index > -1) System.out.println("That is Contact #" + (index + 1));
+        if (index > -1) {
+            System.out.println("That is Contact #" + (index + 1));
+            System.out.println(contacts.get(index).toString());
+        }
         else notFound();
     }
 

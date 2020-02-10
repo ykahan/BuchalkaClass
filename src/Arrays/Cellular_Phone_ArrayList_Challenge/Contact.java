@@ -38,4 +38,8 @@ public class Contact {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+    public static Contact createContact(String name, String number){
+        return new Contact(name, number);
+    }
 }
