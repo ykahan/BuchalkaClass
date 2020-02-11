@@ -5,19 +5,19 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CellularPhone {
+public class ContactsList {
 
     private ArrayList<Contact> contacts;
     private Scanner scanner;
     private boolean quit;
 
-    public CellularPhone() {
+    public ContactsList() {
         this.contacts = new ArrayList<Contact>();
         this.scanner = new Scanner(System.in);
         this.quit = false;
     }
 
-    public CellularPhone(ArrayList<Contact> contacts) {
+    public ContactsList(ArrayList<Contact> contacts) {
         this.contacts = contacts;
         this.scanner = new Scanner(System.in);
         this.quit = false;
@@ -118,6 +118,15 @@ public class CellularPhone {
                 break;
 
             case 9:
+                interaction = "find";
+                id = getName(interaction);
+                printPhoneNumber(id);
+
+                id = "";
+                interaction = "";
+                break;
+
+            case 10:
                 this.scanner = null;
                 this.contacts = null;
                 this.quit = true;
@@ -140,21 +149,29 @@ public class CellularPhone {
             Matcher m = p.matcher(input);
             if (m.find() && m.group().equals(input)) {
                 option = Integer.parseInt(input);
-                if (option < 1 || option > 9) {
-                    System.out.println("Integer must be within the range 1-9, inclusive.");
+                if (option < 1 || option > 10) {
+                    System.out.println("Integer must be within the range 1-10, inclusive.");
                 } else {
                     intReceived = true;
                 }
-            } else System.out.println("User must input an integer within the range 1-9, inclusive.");
+            } else System.out.println("User must input an integer within the range 1-10, inclusive.");
         }
         return option;
+    }
+
+    private void printPhoneNumber(String name){
+        int index = locateContact(name);
+        if(index > -1){
+            String phoneNumber = contacts.get(index).getPhoneNumber();
+            System.out.println("The phone number is: " + phoneNumber);
+        } else notFound();
     }
 
     private void addContact(String name, String phoneNumber) {
         Contact contact = Contact.createContact(name, phoneNumber);
         int nameIndex = locateContact(name);
         int numberIndex = locateContact(phoneNumber);
-        if(nameIndex > -1 && numberIndex > -1) contacts.add(contact);
+        if(nameIndex == -1 && numberIndex == -1) contacts.add(contact);
         else System.out.println("That contact already exists.");
     }
 
@@ -235,7 +252,8 @@ public class CellularPhone {
         sb.append("\n6--Replace Contact");
         sb.append("\n7--Delete Contact");
         sb.append("\n8--Find Contact");
-        sb.append("\n9--Quit");
+        sb.append("\n9--Print Phone Number");
+        sb.append("\n10--Quit");
 
         System.out.println(sb.toString());
 
@@ -254,6 +272,11 @@ public class CellularPhone {
 
     private String getId(String interaction) {
         System.out.println("What is the name or the phone number of the contact you want to " + interaction + "?\r");
+        return scanner.nextLine();
+    }
+
+    private String getName(String interaction){
+        System.out.println("What is the name of the contact you want to " + interaction + "?\r");
         return scanner.nextLine();
     }
 }
