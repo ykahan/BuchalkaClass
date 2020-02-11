@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d56ce716-11ae-4a89-8887-e6d489b4093e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Arrays/Cellular_Phone_ArrayList_Challenge/ContactsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arrays/Cellular_Phone_ArrayList_Challenge/ContactsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Arrays/Autoboxing/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Arrays/Cellular_Phone_ArrayList_Challenge/ContactsList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state>
+              <caret line="158" column="22" selection-start-line="158" selection-start-column="22" selection-end-line="158" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Arrays/Autoboxing/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -69,6 +79,7 @@
       <find>case</find>
       <find>print</find>
       <find>cacase</find>
+      <find>0-9</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Polymorphism/Challenge/Bava_Basra.java" />
         <option value="$PROJECT_DIR$/src/Polymorphism/Challenge/Kesuvos.java" />
         <option value="$PROJECT_DIR$/src/Polymorphism/Challenge/Main.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Addition.java" />
@@ -128,6 +138,7 @@
         <option value="$PROJECT_DIR$/src/Arrays/Cellular_Phone_ArrayList_Challenge/CellularPhone.java" />
         <option value="$PROJECT_DIR$/src/Arrays/Cellular_Phone_ArrayList_Challenge/Main.java" />
         <option value="$PROJECT_DIR$/src/Arrays/Cellular_Phone_ArrayList_Challenge/ContactsList.java" />
+        <option value="$PROJECT_DIR$/src/Arrays/Autoboxing/Main.java" />
       </list>
     </option>
   </component>
@@ -161,13 +172,6 @@
               <item name="BuchalkaClass" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Arrays" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BuchalkaClass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BuchalkaClass" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Arrays" type="462c0819:PsiDirectoryNode" />
-              <item name="Cellular_Phone_ArrayList_Challenge" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BuchalkaClass" type="b2602c69:ProjectViewProjectNode" />
@@ -246,6 +250,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Arrays.Autoboxing.Main" />
+      <module name="BuchalkaClass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Arrays.Autoboxing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Polymorphism.Challenge.Main" />
       <module name="BuchalkaClass" />
@@ -288,9 +305,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (4)" />
+        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
@@ -429,7 +446,7 @@
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49924356" weight="0.32569557" />
-      <window_info active="true" anchor="bottom" x="26" y="323" width="1295" height="206" id="Run" order="9" sideWeight="0.502455" visible="true" weight="0.24549918" />
+      <window_info active="true" anchor="bottom" x="26" y="323" width="1295" height="206" id="Run" order="9" sideWeight="0.502455" visible="true" weight="0.33551556" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
@@ -484,13 +501,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed requestCommand() message" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Encapsulation/Challenge/Printer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Encapsulation/Challenge/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -799,8 +809,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Arrays/Cellular_Phone_ArrayList_Challenge/ContactsList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        <state>
+          <caret line="158" column="22" selection-start-line="158" selection-start-column="22" selection-end-line="158" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Arrays/Autoboxing/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
     </entry>
