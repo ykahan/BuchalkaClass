@@ -34,6 +34,12 @@ public class ContactsList {
         String interaction;
         int index;
         switch (option) {
+            case 0:
+                this.scanner = null;
+                this.contacts = null;
+                this.quit = true;
+                break;
+
             case 1:
                 printOptions();
                 break;
@@ -125,12 +131,6 @@ public class ContactsList {
                 id = "";
                 interaction = "";
                 break;
-
-            case 10:
-                this.scanner = null;
-                this.contacts = null;
-                this.quit = true;
-                break;
         }
         if (!this.quit) {
             int input = getNextInput();
@@ -149,12 +149,12 @@ public class ContactsList {
             Matcher m = p.matcher(input);
             if (m.find() && m.group().equals(input)) {
                 option = Integer.parseInt(input);
-                if (option < 1 || option > 10) {
-                    System.out.println("Integer must be within the range 1-10, inclusive.");
+                if (option < 0 || option > 9) {
+                    System.out.println("Integer must be within the range 0-9, inclusive.");
                 } else {
                     intReceived = true;
                 }
-            } else System.out.println("User must input an integer within the range 1-10, inclusive.");
+            } else System.out.println("User must input an integer within the range 0-9, inclusive.");
         }
         return option;
     }
@@ -244,6 +244,7 @@ public class ContactsList {
     private void printOptions() {
         StringBuilder sb = new StringBuilder();
         sb.append("\nOptions:");
+        sb.append("\n0--Quit");
         sb.append("\n1--Print Options");
         sb.append("\n2--See All Contacts");
         sb.append("\n3--Add New Contact");
@@ -253,7 +254,7 @@ public class ContactsList {
         sb.append("\n7--Delete Contact");
         sb.append("\n8--Find Contact");
         sb.append("\n9--Print Phone Number");
-        sb.append("\n10--Quit");
+
 
         System.out.println(sb.toString());
 
