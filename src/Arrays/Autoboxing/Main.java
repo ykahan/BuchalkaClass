@@ -21,5 +21,9 @@ public class Main {
         }
 
         Integer integer = 71;  // equivalent of Integer integer = Integer.valueOf(71);
+        ArrayList<Integer> intList2 = new ArrayList<Integer>();
+        intList2.add(integer);
+
+        int seventyOne = intList2.get(0); // equivalent of int seventyOne = intList2.get(0).doubleValue();
     }
 }
