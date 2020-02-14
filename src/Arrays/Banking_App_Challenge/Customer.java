@@ -11,11 +11,19 @@ public class Customer {
         this.transactions = new ArrayList<Double>();
     }
 
+    public double[] getTransactions(){
+        double[] transactionsArray = new double[this.transactions.size()];
+        for(int i = 0; i < transactionsArray.length; i++){
+            transactionsArray[i] = this.transactions.get(i);
+        }
+        return transactionsArray;
+    }
+
     public String getName(){
         return this.name;
     }
 
-    private void transaction(Double sum){
+    public void transaction(double sum){
         if(sum < 0){
             double newBalance = getBalance() + sum;
             if(newBalance < -100) {
