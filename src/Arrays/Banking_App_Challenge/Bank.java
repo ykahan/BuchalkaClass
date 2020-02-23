@@ -17,14 +17,26 @@ public class Bank {
         return branchNames;
     }
 
-    public String[] getBranchCustomers(String branchName){
+    public void showBranches(){
+        StringBuilder sb = new StringBuilder();
+        String[] branches = getBranches();
+        for(int i = 0; i < branches.length; i++){
+            sb.append("\nBranch #");
+            sb.append(i + 1);
+            sb.append("]");
+            sb.append("\t");
+            sb.append(branches[i]);
+        }
+        System.out.println(sb.toString());
+    }
+
+    public String[] showBranchCustomers(String branchName){
         for(int i = 0; i < bal.size(); i++){
             if(bal.get(i).getName().toLowerCase().equals(branchName.toLowerCase())){
-                return bal.get(i).getCustomerNames();
+                bal.get(i).showAllCustomers();
             }
         }
         System.out.println("Branch not found");
-        return null;
     }
 
     public void addTransaction(String branchName, String customerName, double sum){

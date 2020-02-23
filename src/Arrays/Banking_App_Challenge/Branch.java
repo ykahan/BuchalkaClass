@@ -42,7 +42,7 @@ public class Branch {
         System.out.println("Customer not found");
     }
 
-    public String[] getCustomerNames(){
+    private String[] getCustomerNames(){
         String[] names = new String[cal.size()];
         for(int i = 0; i < cal.size(); i++){
             String name = cal.get(i).getName();
@@ -51,7 +51,20 @@ public class Branch {
         return names;
     }
 
-    public double[] getTransactions(String customerName){
+    public void showAllCustomers(){
+        StringBuilder sb = new StringBuilder();
+        String[] names = getCustomerNames();
+        for(int i = 0; i < names.length; i++){
+            sb.append("\nCustomer #");
+            sb.append(i+1);
+            sb.append("]");
+            sb.append("\t");
+            sb.append(cal.get(i).getName());
+        }
+        System.out.println(sb.toString());
+    }
+
+    private double[] getTransactions(String customerName){
         for(int i = 0; i < cal.size(); i++){
             if(cal.get(i).getName().toLowerCase().equals(customerName.toLowerCase())){
                 return cal.get(i).getTransactions();
@@ -59,6 +72,19 @@ public class Branch {
         }
         System.out.println("Customer not found");
         return null;
+    }
+
+    public void showTransactions(String customerName){
+        double[] transactions = getTransactions(customerName);
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < transactions.length; i++){
+            sb.append("\nTransaction #");
+            sb.append(i+1);
+            sb.append("]");
+            sb.append("\t");
+            sb.append(transactions[i]);
+        }
+        System.out.println(sb.toString());
     }
 
     public double getBalance(String customerName){
