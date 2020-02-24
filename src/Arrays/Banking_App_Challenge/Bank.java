@@ -30,13 +30,22 @@ public class Bank {
         System.out.println(sb.toString());
     }
 
-    public String[] showBranchCustomers(String branchName){
+    public void showBranchCustomers(String branchName){
         for(int i = 0; i < bal.size(); i++){
             if(bal.get(i).getName().toLowerCase().equals(branchName.toLowerCase())){
                 bal.get(i).showAllCustomers();
             }
         }
         System.out.println("Branch not found");
+    }
+
+    public String[] getBranchCustomers(String branchName){
+        for(int i = 0; i < bal.size(); i++){
+            if(bal.get(i).getName().toLowerCase().equals(branchName.toLowerCase()))
+                return bal.get(i).getAllCustomers();
+        }
+        System.out.println("Branch not found.");
+        return new String[0];
     }
 
     public void addTransaction(String branchName, String customerName, double sum){

@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Bank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+            <state relative-caret-position="81">
+              <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -33,17 +33,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="167">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Branch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+            <state relative-caret-position="158">
+              <caret line="92" column="30" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -61,7 +61,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>toppings.t</find>
-      <find>add</find>
       <find>toAdd</find>
       <find>addSide</find>
       <find>name</find>
@@ -72,6 +71,8 @@
       <find>print</find>
       <find>cacase</find>
       <find>0-9</find>
+      <find>add</find>
+      <find>get</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,8 +130,8 @@
         <option value="$PROJECT_DIR$/src/Arrays/Cellular_Phone_ArrayList_Challenge/ContactsList.java" />
         <option value="$PROJECT_DIR$/src/Arrays/Autoboxing/Main.java" />
         <option value="$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Customer.java" />
-        <option value="$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Bank.java" />
         <option value="$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Branch.java" />
+        <option value="$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Bank.java" />
       </list>
     </option>
   </component>
@@ -145,6 +146,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,8 +177,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,7 +423,7 @@
     <frame x="-3" y="0" width="1346" height="688" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.3273717" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.33281493" />
       <window_info id="Structure" order="1" sideWeight="0.502455" side_tool="true" weight="0.290469" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -800,22 +801,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        <state relative-caret-position="167">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Branch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+        <state relative-caret-position="158">
+          <caret line="92" column="30" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
         </state>
       </provider>
     </entry>

@@ -12,7 +12,7 @@ public class Branch {
     }
 
     public void addCustomer(String name, double sum){
-        String[] names = getCustomerNames();
+        String[] names = getAllCustomers();
         for(int i = 0; i < names.length; i++){
             if(names[i].toLowerCase().equals(name.toLowerCase())){
                 System.out.println("Applicant already a customer at this branch.");
@@ -42,7 +42,7 @@ public class Branch {
         System.out.println("Customer not found");
     }
 
-    private String[] getCustomerNames(){
+    public String[] getAllCustomers(){
         String[] names = new String[cal.size()];
         for(int i = 0; i < cal.size(); i++){
             String name = cal.get(i).getName();
@@ -53,7 +53,7 @@ public class Branch {
 
     public void showAllCustomers(){
         StringBuilder sb = new StringBuilder();
-        String[] names = getCustomerNames();
+        String[] names = getAllCustomers();
         for(int i = 0; i < names.length; i++){
             sb.append("\nCustomer #");
             sb.append(i+1);
@@ -64,7 +64,7 @@ public class Branch {
         System.out.println(sb.toString());
     }
 
-    private double[] getTransactions(String customerName){
+    public double[] getTransactions(String customerName){
         for(int i = 0; i < cal.size(); i++){
             if(cal.get(i).getName().toLowerCase().equals(customerName.toLowerCase())){
                 return cal.get(i).getTransactions();
@@ -108,7 +108,9 @@ public class Branch {
         for(int i = 0; i < cal.size(); i++){
             if(cal.get(i).getName().toLowerCase().equals(name.toLowerCase())){
                 cal.get(i).transaction(sum);
+                return;
             }
+            System.out.println("That person is not a customer at this branch.");
         }
     }
 }
