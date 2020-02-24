@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d56ce716-11ae-4a89-8887-e6d489b4093e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Bank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Branch.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Branch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="113" column="53" lean-forward="true" selection-start-line="113" selection-start-column="53" selection-end-line="113" selection-end-column="53" />
+            <state relative-caret-position="442">
+              <caret line="82" column="29" lean-forward="true" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -74,8 +73,8 @@
       <find>get</find>
       <find>getName</find>
       <find>addCustomer</find>
-      <find>getB</find>
       <find>findCustomer</find>
+      <find>getB</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -809,17 +808,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Branch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="113" column="53" lean-forward="true" selection-start-line="113" selection-start-column="53" selection-end-line="113" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Branch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="82" column="29" lean-forward="true" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
         </state>
       </provider>
     </entry>

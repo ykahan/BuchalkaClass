@@ -64,7 +64,7 @@ public class Branch {
         return this.customers;
     }
 
-    public void showAllCustomers() {
+    public String showAllCustomers() {
         StringBuilder sb = new StringBuilder();
         String[] names = getAllCustomersNames();
         for (int i = 0; i < names.length; i++) {
@@ -74,7 +74,7 @@ public class Branch {
             sb.append("\t");
             sb.append(customers.get(i).getName());
         }
-        System.out.println(sb.toString());
+        return sb.toString();
     }
 
     public double[] getTransactions(String name) {
@@ -86,7 +86,16 @@ public class Branch {
         return null;
     }
 
-    public void showTransactions(String customerName) {
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Branch Name: ");
+        sb.append(this.getName());
+        sb.append(this.showAllCustomers());
+        return sb.toString();
+    }
+
+    public String showTransactions(String customerName) {
         double[] transactions = getTransactions(customerName);
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < transactions.length; i++) {
@@ -96,7 +105,7 @@ public class Branch {
             sb.append("\t");
             sb.append(transactions[i]);
         }
-        System.out.println(sb.toString());
+        return sb.toString();
     }
 
     public double getBalance(String name) {
