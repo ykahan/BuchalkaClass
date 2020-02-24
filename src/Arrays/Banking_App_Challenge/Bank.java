@@ -4,9 +4,11 @@ import java.util.ArrayList;
 
 public class Bank {
     private ArrayList<Branch> branches;
+    private String name;
 
-    public Bank() {
+    public Bank(String name) {
         this.branches = new ArrayList<Branch>();
+        this.name = name;
     }
 
     public String[] getBranches() {
@@ -135,5 +137,15 @@ public class Bank {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.name);
+        for(int i = 0; i < branches.size(); i++){
+            sb.append(branches.get(i).toString());
+        }
+        return sb.toString();
     }
 }
