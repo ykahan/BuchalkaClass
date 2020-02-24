@@ -5,22 +5,29 @@ import java.util.ArrayList;
 public class Bank {
     private ArrayList<Branch> bal;
 
-    public Bank(){
+    public Bank() {
         this.bal = new ArrayList<Branch>();
     }
 
-    public String[] getBranches(){
+    public String[] getBranches() {
         String[] branchNames = new String[bal.size()];
-        for(int i = 0; i < bal.size(); i++) {
+        for (int i = 0; i < bal.size(); i++) {
             branchNames[i] = bal.get(i).getName();
         }
         return branchNames;
     }
 
-    public void showBranches(){
+    public int findBranch(String name) {
+        for (int i = 0; i < bal.size(); i++) {
+            if (bal.get(i).getName().toLowerCase().equals(name.toLowerCase())) return i;
+        }
+        return -1;
+    }
+
+    public void showBranches() {
         StringBuilder sb = new StringBuilder();
         String[] branches = getBranches();
-        for(int i = 0; i < branches.length; i++){
+        for (int i = 0; i < branches.length; i++) {
             sb.append("\nBranch #");
             sb.append(i + 1);
             sb.append("]");
@@ -30,87 +37,71 @@ public class Bank {
         System.out.println(sb.toString());
     }
 
-    public void showBranchCustomers(String branchName){
-        for(int i = 0; i < bal.size(); i++){
-            if(bal.get(i).getName().toLowerCase().equals(branchName.toLowerCase())){
-                bal.get(i).showAllCustomers();
-            }
-        }
-        System.out.println("Branch not found");
+    public void showBranchCustomers(String branchName) {
+        int index = findBranch(branchName);
+        if (index != -1) bal.get(index).showAllCustomers();
+        else System.out.println("Branch not found");
     }
 
-    public String[] getBranchCustomers(String branchName){
-        for(int i = 0; i < bal.size(); i++){
-            if(bal.get(i).getName().toLowerCase().equals(branchName.toLowerCase()))
-                return bal.get(i).getAllCustomers();
-        }
-        System.out.println("Branch not found.");
-        return new String[0];
-    }
-
-    public void addTransaction(String branchName, String customerName, double sum){
-        for(int i = 0; i < bal.size(); i++){
-            if(bal.get(i).getName().toLowerCase().equals(branchName.toLowerCase())){
-                bal.get(i).newTransaction(customerName, sum);
-                return;
-            }
-        }
-        System.out.println("Branch or customer not found");
-        return;
-    }
-
-    public double[] getCustomerTransactions(String branchName, String customerName){
-        for(int i = 0; i < bal.size(); i++){
-            if(bal.get(i).getName().toLowerCase().equals(branchName.toLowerCase())){
-                return bal.get(i).getTransactions(customerName);
-            }
-        }
-        System.out.println("Branch not found");
+    public String[] getBranchCustomers(String branchName) {
+        int index = findBranch(branchName);
+        if (index != -1) return bal.get(index).getAllCustomers();
+        else System.out.println("Branch not found.");
         return null;
     }
 
-    public double getCustomerBalance(String branchName, String customerName){
-        for(int i = 0; i < bal.size(); i++){
-            if(bal.get(i).getName().toLowerCase().equals(branchName.toLowerCase())){
-                return bal.get(i).getBalance(customerName);
-            }
+    public void addTransaction(String branchName, String customerName, double sum) {
+        int branchIndex = findBranch(branchName);
+        if (branchIndex != -1) {
+            int customerIndex = bal.get(branchIndex).findCustomer(customerName);
+            if (customerIndex != -1) bal.get(branchIndex).newTransaction(customerName, sum);
+            else System.out.println("Customer not found");
+        } else System.out.println("Branch not found");
+    }
+
+    public double[] getCustomerTransactions(String branchName, String customerName) {
+        int branchIndex = findBranch(branchName);
+        if (branchIndex != -1) {
+            int customerIndex = bal.get(branchIndex).findCustomer(customerName);
+            if (customerIndex != -1) return bal.get(branchIndex).getCustomerTransactions(customerName);
         }
-        System.out.println("Branch not found");
+        return null;
+    }
+
+    public double getCustomerBalance(String branchName, String customerName) {
+        int branchIndex = findBranch(branchName);
+        if (branchIndex != -1) {
+            int customerIndex = bal.get(branchIndex).findCustomer(customerName);
+            if (customerIndex != -1) return bal.get(branchIndex).getBalance(customerName);
+        }
         return -200.0;
     }
 
-    public void newBranch(String branchName, String firstCustomerName, double sum){
-        for(int i = 0; i < bal.size(); i++){
-            String name = bal.get(i).getName();
-            if(name.toLowerCase().equals(branchName.toLowerCase())){
-                System.out.println("Cannot add branch with that name, because found one that already has that name.");
-                return;
-            }
+    public boolean newBranch(String branchName, String firstCustomerName, double sum) {
+        boolean added = newBranch(branchName);
+        if (added) {
+            int index = findBranch(branchName);
+            this.bal.get(index).addCustomer(firstCustomerName, sum);
+            return true;
         }
-        this.bal.add(new Branch(branchName));
-
-        this.bal.get(bal.size() - 1).addCustomer(firstCustomerName, sum);
+        return false;
     }
 
-    public void newBranch(String branchName){
-        for(int i = 0; i < bal.size(); i++){
-            String name = bal.get(i).getName();
-            if(name.toLowerCase().equals(branchName.toLowerCase())){
-                System.out.println("Cannot add branch with that name, because found one that already has that name.");
-                return;
-            }
+    public boolean newBranch(String branchName) {
+        int index = findBranch(branchName);
+        if (index == -1) {
+            this.bal.add(new Branch(branchName));
+            return true;
         }
-        this.bal.add(new Branch(branchName));
+        return false;
     }
 
-    public void dropBranch(String oldName){
-        for(int i = 0; i < bal.size(); i++) {
-            String name = bal.get(i).getName();
-            if (name.toLowerCase().equals(oldName.toLowerCase())) {
-                bal.remove(i);
-                return;
-            }
+    public boolean dropBranch(String oldName) {
+        int index = findBranch(oldName);
+        if (index == -1) {
+            bal.remove(index);
+            return true;
         }
-        System.out.println("Did not find branch with that name.");
+        return false;
     }
 }

@@ -11,6 +11,12 @@ public class Customer {
         this.transactions = new ArrayList<Double>();
     }
 
+    public Customer(String name, double sum){
+        this.name = name;
+        this.transactions = new ArrayList<Double>();
+        addTransaction(sum);
+    }
+
     public double[] getTransactions(){
         double[] transactionsArray = new double[this.transactions.size()];
         for(int i = 0; i < transactionsArray.length; i++){
@@ -23,7 +29,7 @@ public class Customer {
         return this.name;
     }
 
-    public void transaction(double sum){
+    public void addTransaction(double sum){
         if(sum < 0){
             double newBalance = getBalance() + sum;
             if(newBalance < -100) {
