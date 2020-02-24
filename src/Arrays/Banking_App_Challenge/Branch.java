@@ -3,29 +3,29 @@ package Arrays.Banking_App_Challenge;
 import java.util.ArrayList;
 
 public class Branch {
-    private ArrayList<Customer> cal;
+    private ArrayList<Customer> customers;
     private String name;
 
     public Branch(String name) {
-        this.cal = new ArrayList<Customer>();
+        this.customers = new ArrayList<Customer>();
         this.name = name;
     }
 
     public boolean addCustomer(String name, double sum) {
         if (findCustomer(name) != -1) return false;
-        cal.add(new Customer(name));
+        customers.add(new Customer(name));
         newTransaction(name, sum);
         return true;
     }
 
-    private Customer getCustomer(String customerName){
+    public Customer getCustomer(String customerName) {
         int index = findCustomer(customerName);
-        if(index != -1) return cal.get(index);
+        if (index != -1) return customers.get(index);
         return null;
     }
 
     public int findCustomer(String name) {
-        String[] names = getAllCustomers();
+        String[] names = getAllCustomersNames();
         for (int i = 0; i < names.length; i++) {
             if (names[i].toLowerCase().equals(name.toLowerCase())) {
                 return i;
@@ -42,37 +42,47 @@ public class Branch {
         dropCustomer(customer.getName());
     }
 
-    public void dropCustomer(String name) {
+    public boolean dropCustomer(String name) {
         int customerIndex = findCustomer(name);
-        if (customerIndex != -1) cal.remove(customerIndex);
-        else System.out.println("Customer not found");
+        if (customerIndex != -1) {
+            customers.remove(customerIndex);
+            return true;
+        }
+        return false;
     }
 
-    public String[] getAllCustomers() {
-        String[] names = new String[cal.size()];
-        for (int i = 0; i < cal.size(); i++) {
-            String name = cal.get(i).getName();
+    public String[] getAllCustomersNames() {
+        String[] names = new String[customers.size()];
+        for (int i = 0; i < customers.size(); i++) {
+            String name = customers.get(i).getName();
             names[i] = name;
         }
         return names;
     }
 
+    public ArrayList<Customer> getCustomers(){
+        return this.customers;
+    }
+
     public void showAllCustomers() {
         StringBuilder sb = new StringBuilder();
-        String[] names = getAllCustomers();
+        String[] names = getAllCustomersNames();
         for (int i = 0; i < names.length; i++) {
             sb.append("\nCustomer #");
             sb.append(i + 1);
             sb.append("]");
             sb.append("\t");
-            sb.append(cal.get(i).getName());
+            sb.append(customers.get(i).getName());
         }
         System.out.println(sb.toString());
     }
 
     public double[] getTransactions(String name) {
         int index = findCustomer(name);
-        if (index != -1) return cal.get(index).getTransactions();
+        if (index != -1) {
+            Customer customer = customers.get(index);
+            return customer.getTransactions();
+        }
         return null;
     }
 
@@ -91,19 +101,28 @@ public class Branch {
 
     public double getBalance(String name) {
         int index = findCustomer(name);
-        if (index != -1) return cal.get(index).getBalance();
+        if (index != -1) {
+            Customer customer = customers.get(index);
+            return customer.getBalance();
+        }
         else return -200.0;
     }
 
     public void newTransaction(String name, double sum) {
         int index = findCustomer(name);
-        if (index != -1) cal.get(index).addTransaction(sum);
+        if (index != -1) {
+            Customer customer = customers.get(index);
+            customer.addTransaction(sum);
+        }
         else System.out.println("That person is not a customer at this branch.");
     }
 
-    public double[] getCustomerTransactions(String name){
+    public double[] getCustomerTransactions(String name) {
         int index = findCustomer(name);
-        if(index != -1) return cal.get(index).getTransactions();
+        if (index != -1) {
+            Customer customer = customers.get(index);
+            return customer.getTransactions();
+        }
         return null;
     }
 }
