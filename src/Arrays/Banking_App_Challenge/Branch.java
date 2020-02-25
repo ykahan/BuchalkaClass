@@ -66,6 +66,8 @@ public class Branch {
 
     public String showAllCustomers() {
         StringBuilder sb = new StringBuilder();
+        sb.append("===================");
+        sb.append("\n" + this.name);
         String[] names = getAllCustomersNames();
         for (int i = 0; i < names.length; i++) {
             sb.append("\nCustomer #");

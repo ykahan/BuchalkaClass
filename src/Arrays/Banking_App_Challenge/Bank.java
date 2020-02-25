@@ -39,13 +39,14 @@ public class Bank {
         System.out.println(sb.toString());
     }
 
-    public void showBranchCustomers(String branchName) {
+    public int showBranchCustomers(String branchName) {
         int index = findBranch(branchName);
         if (index != -1) {
             Branch branch = branches.get(index);
-            branch.showAllCustomers();
+            System.out.println( branch.showAllCustomers());
         }
-        else System.out.println("Branch not found");
+        else System.out.println("=========================\n" + branchName + " branch not found");
+        return index;
     }
 
     public String[] getBranchCustomers(String branchName) {
@@ -72,7 +73,7 @@ public class Bank {
          return false;
     }
 
-    public double[] getCustomerTransactions(String branchName, String customerName) {
+    private double[] getCustomerTransactions(String branchName, String customerName) {
         int branchIndex = findBranch(branchName);
         if (branchIndex != -1) {
             Branch branch = branches.get(branchIndex);
@@ -83,6 +84,29 @@ public class Bank {
             }
         }
         return null;
+    }
+
+    public void showCustomerTransactions(String branchName, String customerName){
+        double[] transactions = getCustomerTransactions(branchName, customerName);
+        StringBuilder sb = new StringBuilder();
+        sb.append("============================");
+        if(transactions != null) {
+            if(transactions.length == 0) sb.append(customerName + " has no transactions.");
+            else{
+                sb.append("\n" + customerName + "'s transactions at " + branchName + " branch:");
+                for(int i = 0; i < transactions.length; i++){
+                    sb.append("\nTransaction #");
+                    sb.append(i + 1);
+                    sb.append(") ");
+                    sb.append(transactions[i]);
+                }
+            }
+            System.out.println(sb.toString());
+        } else{
+            sb.append("\nEither " + branchName + " branch does not exist, or else "
+                    + customerName + " is not a customer there.");
+            System.out.println(sb.toString());
+        }
     }
 
     public double getCustomerBalance(String branchName, String customerName) {
