@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d56ce716-11ae-4a89-8887-e6d489b4093e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/LinkedListDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +30,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedList/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+            <state relative-caret-position="374">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="101" column="44" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -69,6 +78,12 @@
       <find>getB</find>
       <find>findCustomer</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\USER\IdeaProjects\BuchalkaClass\src\LinkedList</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,7 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/yehoshuakahan/White_Bread.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/Hot_Dog_Bun.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Turkey.java" />
         <option value="$PROJECT_DIR$/src/com/yehoshuakahan/OOP_Master_Challenge/Chicken.java" />
@@ -127,6 +141,7 @@
         <option value="$PROJECT_DIR$/src/Arrays/Banking_App_Challenge/Main.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/Customer.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/Main.java" />
+        <option value="$PROJECT_DIR$/src/LinkedList/LinkedListDemo.java" />
       </list>
     </option>
   </component>
@@ -141,7 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,6 +178,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -191,9 +206,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedList.Main" />
+  <component name="RunManager" selected="Application.LinkedListDemo">
+    <configuration name="LinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList.LinkedListDemo" />
       <module name="BuchalkaClass" />
       <extension name="coverage">
         <pattern>
@@ -205,12 +220,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Arrays.Descending_Order_Arrays_Challenge.Main" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList.Main" />
       <module name="BuchalkaClass" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Arrays.Descending_Order_Arrays_Challenge.*" />
+          <option name="PATTERN" value="LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -259,11 +274,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinkedListDemo" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (6)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (4)" />
-        <item itemvalue="Application.Main (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -383,9 +398,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1346" height="688" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.16407464" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.16874027" />
       <window_info id="Structure" order="1" sideWeight="0.502455" side_tool="true" weight="0.290469" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -400,8 +414,7 @@
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.49848714" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49924356" weight="0.32569557" />
-      <window_info active="true" anchor="bottom" x="26" y="323" width="1295" height="206" id="Run" order="9" sideWeight="0.502455" visible="true" weight="0.4036036" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49924356" weight="0.3243243" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
@@ -411,6 +424,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" x="26" y="323" width="1295" height="206" id="Run" order="9" sideWeight="0.502455" visible="true" weight="0.26982892" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.33825818" />
@@ -456,13 +470,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed requestCommand() message" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Polymorphism/Challenge/Brachos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Polymorphism/Challenge/Bava_Basra.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -777,8 +784,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+        <state relative-caret-position="374">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="101" column="44" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
         </state>
       </provider>
     </entry>
