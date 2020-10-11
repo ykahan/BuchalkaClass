@@ -10,6 +10,10 @@ public class Demo {
         printList(masechtosToLearn);
         masechtosToLearn.add(2, "Eiruvin");
         printList(masechtosToLearn);
+        masechtosToLearn.add(2, "Eiruvin");
+        printList(masechtosToLearn);
+        masechtosToLearn.remove(2);
+        printList(masechtosToLearn);
     }
 
     public static void addMasechtos(LinkedList<String> ll){
