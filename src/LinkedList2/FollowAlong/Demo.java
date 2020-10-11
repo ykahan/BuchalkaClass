@@ -19,6 +19,11 @@ public class Demo {
         printList(masechtosToLearn);
         removeAll(masechtosToLearn);
         printList(masechtosToLearn);
+        addAlphabetically(masechtosToLearn, "Shabbos");
+        addAlphabetically(masechtosToLearn, "Brachos");
+        addAlphabetically(masechtosToLearn, "Eiruvin");
+        addAlphabetically(masechtosToLearn, "Bava Kammma");
+        printList(masechtosToLearn);
     }
 
     public static void removeAll(LinkedList<String> ll){
@@ -52,7 +57,7 @@ public class Demo {
             }
             System.out.println("Okay, we're done.\n");
         } else {
-            System.out.println("No elements found.");
+            System.out.println("No elements found.\n");
         }
     }
 }
