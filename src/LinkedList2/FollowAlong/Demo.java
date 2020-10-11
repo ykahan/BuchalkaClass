@@ -8,6 +8,8 @@ public class Demo {
         LinkedList<String> masechtosToLearn = new LinkedList<String>();
         addMasechtos(masechtosToLearn);
         printList(masechtosToLearn);
+        masechtosToLearn.add(2, "Eiruvin");
+        printList(masechtosToLearn);
     }
 
     public static void addMasechtos(LinkedList<String> ll){
@@ -21,5 +23,6 @@ public class Demo {
         while(iter.hasNext()){
             System.out.println("Now learning " + iter.next());
         }
+        System.out.println("Okay, we're done.\n");
     }
 }
