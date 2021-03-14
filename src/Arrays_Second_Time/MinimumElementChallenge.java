@@ -3,7 +3,7 @@ package Arrays_Second_Time;
 import java.util.Scanner;
 
 public class MinimumElementChallenge {
-    static Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.println("How many integers?");
