@@ -35,7 +35,7 @@ public class SortNumericArray {
         original[i - 1] = temp;
 
         return sortIntegersDesc(original);
-        }
+    }
 
     private static int isDescending(int[] original) {
         boolean isDescending;
