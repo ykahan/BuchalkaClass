@@ -2,7 +2,7 @@ package Arrays_Second_Time;
 
 import java.util.Scanner;
 
-public class DownSort {
+public class SortNumericArray {
     static Scanner scanner = new Scanner(System.in);
 
     static void printArray(int[] sorted){
@@ -17,7 +17,16 @@ public class DownSort {
         }
     }
 
-    static int[] sortIntegers(int[] original){
+    static int[] sortIntegersAsc(int[] original){
+        int[] desc = sortIntegersDesc(original);
+        int[] asc = new int[desc.length];
+        for(int i = 0; i < asc.length; i++){
+            asc[i] = desc[desc.length - 1 - i];
+        }
+        return asc;
+    }
+
+    static int[] sortIntegersDesc(int[] original){
         int i = isDescending(original);
         if(i == -1) return original;
 
@@ -25,7 +34,7 @@ public class DownSort {
         original[i] = original[i - 1];
         original[i - 1] = temp;
 
-        return sortIntegers(original);
+        return sortIntegersDesc(original);
         }
 
     private static int isDescending(int[] original) {
