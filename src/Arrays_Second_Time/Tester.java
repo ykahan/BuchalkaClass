@@ -6,7 +6,7 @@ public class Tester {
         int[] original = SortNumericArray.getIntegers(size);
         int[] sortedDesc = SortNumericArray.sortIntegersDesc(original);
         SortNumericArray.printArray(sortedDesc);
-        int[] sortedAsc = SortNumericArray.sortIntegersAsc(original);
+        int[] sortedAsc = SortNumericArray.sortIntegersAsc(sortedDesc);
         SortNumericArray.printArray(sortedAsc);
     }
 }
