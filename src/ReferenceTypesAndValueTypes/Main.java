@@ -21,7 +21,7 @@ public class Main {
         System.out.println(Arrays.toString(intArray1));
         System.out.println(Arrays.toString(intArray2));
         intArray2[2] = 2;
-        
+
         System.out.println(Arrays.toString(intArray1));
         System.out.println(Arrays.toString(intArray2));
     }
