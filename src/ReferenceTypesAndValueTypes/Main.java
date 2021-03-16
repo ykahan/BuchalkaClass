@@ -1,21 +1,20 @@
 package ReferenceTypesAndValueTypes;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-    private static Scanner scanner = new Scanner(System.in);
-    private static GroceryList gl = new GroceryList();
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final GroceryList gl = new GroceryList();
 
     public static void main(String[] args) {
         boolean quit = false;
-        int choice = 0;
+        int choice;
         printInstructions();
-        while(!quit){
+        while (!quit) {
             System.out.println("Enter your choice:");
             choice = scanner.nextInt();
             scanner.nextLine();
-            switch(choice){
+            switch (choice) {
                 case 0:
                     printInstructions();
                     break;
@@ -41,7 +40,7 @@ public class Main {
         }
     }
 
-    public static void printInstructions(){
+    public static void printInstructions() {
         System.out.println("\nPress:");
         System.out.println("\t0 for options");
         System.out.println("\t1 to print the grocery list");
@@ -52,35 +51,51 @@ public class Main {
         System.out.println("\t6 to quit the app");
     }
 
-    public static void addItem(){
+    public static void addItem() {
         System.out.println("Please enter your item");
         gl.addGroceries(scanner.nextLine());
     }
 
-    public static void modifyItem(){
-        System.out.println("Enter item number");
-        int itemNum = scanner.nextInt();
-        scanner.nextLine();
-        System.out.println("Enter replacement item");
-        String newItem = scanner.nextLine();
-        gl.changeItem(itemNum - 1, newItem);
+    public static void modifyItem() {
+        System.out.println("Enter item to change");
+        String itemToChange = scanner.nextLine();
+        int index = getIndexOfItem(itemToChange);
+        if (index > -1) {
+            System.out.println("Enter replacement item");
+            String newItem = scanner.nextLine();
+            gl.changeItem(index, newItem);
+            System.out.println(itemToChange + " replaced with " + newItem);
+        } else System.out.println(itemToChange + " not found");
     }
 
-    public static void removeItem(){
-        System.out.println("Enter item number");
-        int itemNum = scanner.nextInt();
-        scanner.nextLine();
-        gl.removeItem(itemNum - 1);
+    public static void removeItem() {
+        System.out.println("Enter item to delete");
+        String itemToDelete = scanner.nextLine();
+        int itemNum = getIndexOfItem(itemToDelete);
+        if(itemNum != -1) {
+            gl.removeItem(itemNum - 1);
+            System.out.println(itemToDelete + " deleted");
+        } else {
+            System.out.println(itemToDelete + " not found");
+        }
     }
 
-    public static void searchForItem(){
+    public static int getIndexOfItem(String item) {
+        return gl.findItem(item);
+    }
+
+    public static void searchForItem() {
         System.out.println("Enter item to search for");
         String targetItem = scanner.nextLine();
-        if(gl.findItem(targetItem) != null) System.out.println("Found item");
-        else System.out.println("Item not found");
+        int index = gl.findItem(targetItem);
+        if (index != -1) {
+            System.out.println("Found " + targetItem + " at position " +
+                    (index + 1) + " on the list");
+        }
+        else System.out.println(targetItem + " not found");
     }
 
-    public static void printGroceryList(){
+    public static void printGroceryList() {
         gl.printList();
     }
 }

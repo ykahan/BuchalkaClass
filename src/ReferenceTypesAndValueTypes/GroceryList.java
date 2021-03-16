@@ -26,9 +26,12 @@ public class GroceryList {
         groceries.remove(index);
     }
 
-    public String findItem(String item) {
+    public int findItem(String item) {
         int position = groceries.indexOf(item);
-        if (position > -1) return groceries.get(position);
-        return null;
+        return position;
+    }
+
+    public ArrayList<String> getGroceries() {
+        return groceries;
     }
 }
