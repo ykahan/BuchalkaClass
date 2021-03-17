@@ -79,9 +79,9 @@ public class ContactsList {
         if (contacts.size() == 0) return "No contacts founds";
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < contacts.size(); i++) {
-            sb.append((i + 1) + ": "
+            sb.append((i + 1) + ") "
                     + contacts.get(i).getName() + ": "
-                    + contacts.get(i).getPhone());
+                    + contacts.get(i).getPhone() + "\n");
         }
         return sb.toString();
     }

@@ -6,11 +6,7 @@ public class MobilePhone {
     private ContactsList cl = new ContactsList();
     private static Scanner scanner = new Scanner(System.in);
 
-    public void main(String[] args) {
-        operatePhone();
-    }
-
-    private void operatePhone() {
+    public void operatePhone() {
         printInstructions();
         boolean continueApp = true;
         while (continueApp) {
@@ -26,10 +22,17 @@ public class MobilePhone {
                 case 2:
                     System.out.println("Name:");
                     String name = scanner.nextLine();
-                    System.out.println("Phone number:");
-                    String phone = scanner.nextLine();
-                    cl.storeNewContact(new Contact(name, phone));
-                    break;
+                    int index = cl.findContactByName(new Contact(name, "0"));
+                    if (index == -1) {
+                        System.out.println("Phone number:");
+                        String phone = scanner.nextLine();
+                        System.out.println("Storing new contact \"" + name + "\"");
+                        cl.storeNewContact(new Contact(name, phone));
+                        break;
+                    } else {
+                        System.out.println(name + " already present");
+                        break;
+                    }
                 case 3:
                     System.out.println("Name:");
                     name = scanner.nextLine();
@@ -40,7 +43,8 @@ public class MobilePhone {
                         break;
                     } else {
                         System.out.println("Phone number:");
-                        phone = scanner.nextLine();
+                        String phone = scanner.nextLine();
+                        System.out.println("Changing phone number of \"" + name + "\" to " + phone);
                         cl.modifyPhone(new Contact(name, phone));
                         break;
                     }
@@ -52,6 +56,7 @@ public class MobilePhone {
                         System.out.println(name + " not found");
                         break;
                     } else {
+                        System.out.println("Deleting \"" + name + "\"");
                         cl.deleteContact(new Contact(name, "0"));
                         break;
                     }
@@ -59,13 +64,14 @@ public class MobilePhone {
                     System.out.println("Name:");
                     name = scanner.nextLine();
                     int loc = cl.findContactByName(new Contact(name, "0"));
-                    if(loc > -1) System.out.println(name + " appears at position " + loc);
+                    if (loc > -1) System.out.println(name + " appears at position " + loc);
                     else System.out.println(name + " not found");
                     break;
                 case 6:
                     continueApp = false;
                     break;
             }
+            System.out.println("Done, please enter new instruction");
         }
     }
 
@@ -77,6 +83,6 @@ public class MobilePhone {
         System.out.println("\t3 to change the phone number of an existing contact");
         System.out.println("\t4 to delete an existing contact");
         System.out.println("\t5 to search for an existing contact");
-        System.out.println("\6 to shut down the app");
+        System.out.println("\t6 to shut down the app");
     }
 }
