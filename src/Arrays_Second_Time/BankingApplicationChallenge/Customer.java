@@ -51,7 +51,7 @@ public class Customer {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         if(transactions.size() > 0){
-            sb.append("Transactions of " + name);
+            sb.append("Transactions of " + name + ":\n");
             for (int i = 0; i < transactions.size(); i++) {
                 sb.append(i + 1 + ") " + transactions.get(i) + "\n");
             }

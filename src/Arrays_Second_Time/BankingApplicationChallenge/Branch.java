@@ -28,14 +28,14 @@ public class Branch {
 
     public void addTransaction(String customerName, double transaction) {
         Customer cust = getCustomer(customerName);
-        cust.addTransaction(transaction);
+        if(cust != null) cust.addTransaction(transaction);
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         if (customers.size() > 0) {
-            sb.append("Customers of " + name + " branch:");
+            sb.append("Customers of " + name + " branch:\n");
             for (int i = 0; i < customers.size(); i++) {
                 sb.append(i + 1 + ") " + customers.get(i).getName() + "\n");
             }
@@ -46,9 +46,13 @@ public class Branch {
     }
 
     public Customer getCustomer(String name){
+        Customer customer = null;
         for (int i = 0; i < customers.size(); i++) {
-            if(customers.get(i).getName().equals(name)) return customers.get(i);
+            if(customers.get(i).getName().equals(name)) {
+                customer = customers.get(i);
+                break;
+            }
         }
-        return null;
+        return customer;
     }
 }
