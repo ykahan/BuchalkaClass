@@ -3,8 +3,12 @@ package Arrays_Second_Time.BankingApplicationChallenge;
 import java.util.ArrayList;
 
 public class Bank {
+    private String name;
     private ArrayList<Branch> branches = new ArrayList<>();
 
+    public Bank(String name){
+        this.name = name;
+    }
     public void addBranch(String branchName){
         branches.add(new Branch(branchName));
     }

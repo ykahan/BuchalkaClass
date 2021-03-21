@@ -2,7 +2,7 @@ package Arrays_Second_Time.BankingApplicationChallenge;
 
 public class Main {
     public static void main(String[] args) {
-        Bank bank = new Bank();
+        Bank bank = new Bank("Big Bank");
         String betShemesh = "Bet Shemesh";
         bank.addBranch(betShemesh);
         System.out.println(bank.getBranchCustomersString(betShemesh));
