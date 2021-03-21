@@ -21,5 +21,7 @@ public class Main {
         bank.addTransaction(newBranch, cust2, 3.4);
         System.out.println(bank.getCustTransactionsString(newBranch, cust2));
         System.out.println(bank.getCustTransactionsString(newBranch, cust1));
+        bank.addCustomer(newBranch, cust1);
+        System.out.println(bank.getBranchCustomersString(newBranch));
     }
 }
