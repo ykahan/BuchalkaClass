@@ -27,12 +27,12 @@ public class Bank {
         return getBranch(branchName).toString();
     }
 
-    public String getCustTransactionsString(String branchName, String name){
+    public String getCustTransactionsString(String branchName, String customerName){
         Branch branch = getBranch(branchName);
-        Customer cust = branch.getCustomer(name);
-        if(cust == null) return "Customer not found";
-        if(cust == null) return "Customer not found";
-        return cust.toString();
+        if(branch == null) return branchName + " branch not found.";
+        Customer cust = branch.getCustomer(customerName);
+        if(cust == null) return customerName + " not found at " + branch.getName();
+        return branch.getName() + " Branch\n" + cust.toString();
     }
 
     private Branch getBranch(String branchName) {
