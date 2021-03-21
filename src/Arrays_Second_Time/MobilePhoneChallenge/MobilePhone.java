@@ -39,7 +39,7 @@ public class MobilePhone {
                     boolean found =
                             cl.searchForContactByName(new Contact(name, "0"));
                     if (!found) {
-                        System.out.println(name + " not found");
+                        System.out.println("\"" + name + "\" not found");
                         break;
                     } else {
                         System.out.println("Phone number:");
@@ -53,7 +53,7 @@ public class MobilePhone {
                     name = scanner.nextLine();
                     found = cl.searchForContactByName(new Contact(name, "0"));
                     if (!found) {
-                        System.out.println(name + " not found");
+                        System.out.println("\"" + name + "\" not found");
                         break;
                     } else {
                         System.out.println("Deleting \"" + name + "\"");
@@ -65,13 +65,14 @@ public class MobilePhone {
                     name = scanner.nextLine();
                     int loc = cl.findContactByName(new Contact(name, "0"));
                     if (loc > -1) System.out.println(name + " appears at position " + loc);
-                    else System.out.println(name + " not found");
+                    else System.out.println("\"" + name + "\" not found");
                     break;
                 case 6:
                     continueApp = false;
                     break;
             }
-            System.out.println("Done, please enter new instruction");
+            if(continueApp) System.out.println("Done, please enter new instruction");
+            else System.out.println("'K bye");
         }
     }
 
