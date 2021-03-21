@@ -10,6 +10,11 @@ public class Customer {
         this.name = name;
     }
 
+    public Customer(String name, Double transaction){
+        this.name = name;
+        transactions.add(transaction);
+    }
+
     public String getName(){
         return this.name;
     }
@@ -40,5 +45,19 @@ public class Customer {
 
     public void deleteTransaction(int index){
         transactions.remove(index);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        if(transactions.size() > 0){
+            sb.append("Transactions of " + name);
+            for (int i = 0; i < transactions.size(); i++) {
+                sb.append(i + 1 + ") " + transactions.get(i) + "\n");
+            }
+        } else {
+            sb.append("No transactions found for " + name);
+        }
+        return sb.toString();
     }
 }
