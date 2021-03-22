@@ -1,2 +1,4 @@
-package Arrays_Second_Time.LinkedLists;public class Demo {
+package Arrays_Second_Time.LinkedLists;
+
+public class Demo {
 }
