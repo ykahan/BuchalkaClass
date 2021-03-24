@@ -6,8 +6,7 @@ public class Album {
     private ArrayList<Song> songs = new ArrayList<>();
     private String title;
 
-    public Album(ArrayList<Song> songs, String title) {
-        this.songs = songs;
+    public Album(String title) {
         this.title = title;
     }
 
