@@ -1,4 +1,4 @@
-package InterfacesAndInnerAndAbstractClasses.InterfaceChallenge.InnerClass;
+package InterfacesAndInnerAndAbstractClasses.InnerClass;
 
 public class GearBox {
 }
