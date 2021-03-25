@@ -1,9 +1,11 @@
 package InterfacesAndInnerAndAbstractClasses.InterfaceChallenge;
 
+import InterfacesAndInnerAndAbstractClasses.InterfaceChallenge.ISaveable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlayerCharacter implements ISaveable{
+public class PlayerCharacter implements ISaveable {
     private String characterName;
     private String characterType;
     private String playerName;

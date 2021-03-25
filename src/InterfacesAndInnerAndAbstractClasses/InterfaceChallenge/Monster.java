@@ -1,9 +1,11 @@
 package InterfacesAndInnerAndAbstractClasses.InterfaceChallenge;
 
+import InterfacesAndInnerAndAbstractClasses.InterfaceChallenge.ISaveable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Monster implements ISaveable{
+public class Monster implements ISaveable {
     private String type;
     private String hitPoints;
     private String attack;
