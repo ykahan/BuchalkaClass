@@ -3,8 +3,8 @@ package InterfacesAndInnerAndAbstractClasses.InnerClass;
 import java.util.ArrayList;
 
 public class Gearbox {
-    private ArrayList<Gear> gears;
-    private int maxGear;
+    private final ArrayList<Gear> gears;
+    private final int maxGear;
     private int currentGear;
     private boolean clutchIsIn;
 
@@ -26,14 +26,21 @@ public class Gearbox {
     }
 
     public void changeGear(int number){
+        if(gearIsValid(number) && haveGear(number) && clutchIsIn)
         this.currentGear = number;
     }
 
+    private boolean haveGear(int number){
+        for (Gear gear : gears) {
+            if (number == gear.gearNumber) return true;
+        }
+        return false;
+    }
+
     private boolean gearIsNew(int number, double ratio) {
-        for (int i = 0; i < gears.size(); i++) {
-            Gear gear = gears.get(i);
-            if(number == gear.gearNumber) return false;
-            if(ratio == gear.ratio) return false;
+        for (Gear gear : gears) {
+            if (number == gear.gearNumber) return false;
+            if (ratio == gear.ratio) return false;
         }
         return true;
     }
@@ -42,9 +49,13 @@ public class Gearbox {
         return number > 0 && number <= maxGear && ratio > 0;
     }
 
-    private class Gear {
-        private int gearNumber;
-        private double ratio;
+    private boolean gearIsValid(int number){
+        return gearIsValid(number, 1.0);
+    }
+
+    private static class Gear {
+        private final int gearNumber;
+        private final double ratio;
 
         public Gear(int gearNumber, double ratio) {
             this.gearNumber = gearNumber;
