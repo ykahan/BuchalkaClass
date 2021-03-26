@@ -25,12 +25,26 @@ public class Gearbox {
         }
     }
 
-    public void changeGear(int number){
-        if(gearIsValid(number) && haveGear(number) && clutchIsIn)
-        this.currentGear = number;
+    public void changeGear(int number) {
+        if (gearIsValid(number) && haveGear(number) && clutchIsIn) {
+            this.currentGear = number;
+            System.out.println("Gear now " + this.currentGear);
+        } else{
+            System.out.println("Grind");
+            this.currentGear = 0;
+        }
     }
 
-    private boolean haveGear(int number){
+    public double getWheelSpeed(int revs){
+        if(clutchIsIn){
+            System.out.println("Scream");
+            return 0.0;
+        } else {
+            return revs * gears.get(this.currentGear).getRatio();
+        }
+    }
+
+    private boolean haveGear(int number) {
         for (Gear gear : gears) {
             if (number == gear.gearNumber) return true;
         }
@@ -49,7 +63,7 @@ public class Gearbox {
         return number > 0 && number <= maxGear && ratio > 0;
     }
 
-    private boolean gearIsValid(int number){
+    private boolean gearIsValid(int number) {
         return gearIsValid(number, 1.0);
     }
 
@@ -64,6 +78,10 @@ public class Gearbox {
 
         public double driveSpeed(int revs) {
             return revs * this.ratio;
+        }
+
+        public double getRatio() {
+            return this.ratio;
         }
     }
 
