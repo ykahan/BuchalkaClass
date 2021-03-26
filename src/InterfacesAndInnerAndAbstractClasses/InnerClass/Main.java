@@ -7,5 +7,10 @@ public class Main {
         porsche.addGear(2, 6.5);
         porsche.changeGear(1);
         System.out.println(porsche.getWheelSpeed(1000));
+        porsche.operateClutch(true);
+        porsche.changeGear(1);
+        System.out.println(porsche.getWheelSpeed(1000));
+        porsche.operateClutch(false);
+        System.out.println(porsche.getWheelSpeed(1000));
     }
 }
