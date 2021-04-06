@@ -23,7 +23,7 @@ public class Gearbox {
             this.ratio = ratio;
         }
 
-        private double driveSpeed(int revs){
+        public double driveSpeed(int revs){
             return (revs * this.ratio);
         }
     }
