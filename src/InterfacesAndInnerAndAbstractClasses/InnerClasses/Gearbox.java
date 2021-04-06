@@ -14,7 +14,21 @@ public class Gearbox {
         this.gears.add(neutral);
     }
 
-    public class Gear{
+    public void addGear(int gearNum, double ratio){
+        Gear gear = new Gear(gearNum, ratio);
+        gears.add(gear);
+    }
+
+    public double driveSpeed(int gearNum, int revs){
+        for(Gear gear: gears){
+            if(gear.gearNum == gearNum){
+                return gear.driveSpeed(revs);
+            }
+        }
+        return -1.0;
+    }
+
+    private class Gear{
         private int gearNum;
         private double ratio;
 
