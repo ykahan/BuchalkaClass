@@ -68,6 +68,20 @@ public class Gearbox {
         }
     }
 
+    @Override
+    public String toString() {
+        String gearsString = "";
+        for(Gear gear: gears){
+            gearsString += "\n\t" + gear.toString();
+        }
+        return "Gearbox{\n" +
+                "gears=" + gearsString +
+                ",\n\t maxGears=" + maxGears +
+                ",\n\t currentGear=" + currentGear +
+                ",\n\t clutchIsIn=" + clutchIsIn +
+                '}';
+    }
+
     public double driveSpeed(int revs) {
         if (clutchIsIn) {
             System.out.println("No wheel speed");
@@ -96,6 +110,14 @@ public class Gearbox {
 
         public double driveSpeed(int revs) {
             return (revs * this.ratio);
+        }
+
+        @Override
+        public String toString() {
+            return "Gear{" +
+                    "gearNum=" + gearNum +
+                    ", ratio=" + ratio +
+                    '}';
         }
     }
 }
