@@ -8,13 +8,18 @@ public class Gearbox {
     private Gear currentGear;
     private boolean clutchIsIn;
 
-    public Gearbox(int maxGears) {
+    public Gearbox(int maxGears, double ratio) {
         this.maxGears = maxGears;
         this.gears = new ArrayList<>();
 
         Gear neutral = new Gear(0, 0.0);
         this.gears.add(neutral);
         currentGear = neutral;
+
+        for (int i = 1; i < maxGears; i++) {
+            double gearRatio = ratio * i;
+            this.gears.add(new Gear(i, gearRatio));
+        }
 
         clutchIsIn = false;
     }
@@ -25,40 +30,6 @@ public class Gearbox {
 
     public void operateClutch(){
         this.clutchIsIn = !clutchIsIn;
-    }
-
-    public void addGear(int gearNum, double ratio) {
-        if (gearNum > 0 && gearNum <= maxGears) {
-            for (Gear gear : gears) {
-                if (gear.getNum() == gearNum || gear.getRatio() == ratio) return;
-                // gear's already present, should not be added
-            }
-            Gear newGear = new Gear(gearNum, ratio);
-            gears.add(newGear);
-        }
-    }
-
-    public void addGear(double ratio){
-        if(gears.size() < maxGears){
-            boolean[] gearsPresent = createGearsArray();
-            for (int i = 0; i < gearsPresent.length; i++) {
-                if(gearsPresent[i] == false) {
-                    addGear(i, ratio);
-                    return;
-                }
-            }
-        }
-    }
-
-    private boolean[] createGearsArray() {
-        boolean[] gearsPresent = new boolean[maxGears];
-        for (int i = 0; i < gearsPresent.length; i++) {
-            gearsPresent[i] = false;
-        }
-        for(Gear gear: gears){
-            gearsPresent[gear.getNum()] = true;
-        }
-        return gearsPresent;
     }
 
     public void changeGear(int newGear) {

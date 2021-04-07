@@ -2,10 +2,8 @@ package InterfacesAndInnerAndAbstractClasses.InnerClasses;
 
 public class Main {
     public static void main(String[] args) {
-        Gearbox mclaren = new Gearbox(6);
-        mclaren.addGear(1, 5.3);
-        mclaren.addGear(10.6);
-        mclaren.addGear(15.9);
+        Gearbox mclaren = new Gearbox(6, 5.3);
+
         mclaren.changeGear(1);
         mclaren.operateClutch();
         mclaren.changeGear(1);
@@ -13,6 +11,7 @@ public class Main {
         mclaren.operateClutch();
         double speed = mclaren.driveSpeed(1000);
         System.out.println("Speed is " + speed);
+        System.out.println(mclaren.toString());
 
     }
 }
