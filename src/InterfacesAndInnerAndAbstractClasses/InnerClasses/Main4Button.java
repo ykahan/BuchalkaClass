@@ -23,6 +23,14 @@ public class Main4Button {
 
         btnPrint.setOnClickListener(new ClickListener());
         listen();
+        btnPrint.setOnClickListener(new Button.OnClickListener() {
+            // anonymous class
+            @Override
+            public void onClick(String str) {
+                System.out.println(str + " is the title and it was clicked");
+            }
+        });
+        listen();
     }
 
     private static void listen(){
