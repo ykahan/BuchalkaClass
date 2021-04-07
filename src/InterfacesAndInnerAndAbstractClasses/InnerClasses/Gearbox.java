@@ -11,14 +11,20 @@ public class Gearbox {
     public Gearbox(int maxGears) {
         this.maxGears = maxGears;
         this.gears = new ArrayList<>();
+
         Gear neutral = new Gear(0, 0.0);
         this.gears.add(neutral);
-        currentGear = gears.get(0);
+        currentGear = neutral;
+
         clutchIsIn = false;
     }
 
     public void operateClutch(boolean in) {
         this.clutchIsIn = in;
+    }
+
+    public void operateClutch(){
+        this.clutchIsIn = !clutchIsIn;
     }
 
     public void addGear(int gearNum, double ratio) {
@@ -60,7 +66,7 @@ public class Gearbox {
             for (Gear gear : gears) {
                 if (gear.getNum() == newGear) {
                     currentGear = gear;
-                    System.out.println("Gear changed to number " + currentGear);
+                    System.out.println("Gear changed to number " + currentGear.getNum());
                 }
             }
         } else {
@@ -87,7 +93,7 @@ public class Gearbox {
             System.out.println("No wheel speed");
             return 0.0;
         } else {
-                return this.currentGear.getNum() * revs;
+                return this.currentGear.getRatio() * revs;
             }
         }
 
