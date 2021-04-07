@@ -1,6 +1,6 @@
 package InterfacesAndInnerAndAbstractClasses.InnerClasses;
 
-public class Main {
+public class Main4Gearbox {
     public static void main(String[] args) {
         Gearbox mclaren = new Gearbox(6, 5.3);
 
