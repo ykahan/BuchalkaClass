@@ -9,19 +9,19 @@ public class Gearbox {
     private boolean clutchIsIn;
 
     public Gearbox(int maxGears, double ratio) {
-        this.maxGears = maxGears;
-        this.gears = new ArrayList<>();
+            this.maxGears = maxGears;
+            this.gears = new ArrayList<>();
 
-        Gear neutral = new Gear(0, 0.0);
-        this.gears.add(neutral);
-        currentGear = neutral;
+            Gear neutral = new Gear(0, 0.0);
+            this.gears.add(neutral);
+            currentGear = neutral;
 
-        for (int i = 1; i < maxGears; i++) {
-            double gearRatio = ratio * i;
-            this.gears.add(new Gear(i, gearRatio));
-        }
+            for (int i = 1; i < maxGears; i++) {
+                double gearRatio = ratio * i;
+                this.gears.add(new Gear(i, gearRatio));
+            }
 
-        clutchIsIn = false;
+            clutchIsIn = false;
     }
 
     public void operateClutch(boolean in) {
@@ -47,9 +47,9 @@ public class Gearbox {
 
     @Override
     public String toString() {
-        String gearsString = "";
+        StringBuilder gearsString = new StringBuilder();
         for(Gear gear: gears){
-            gearsString += "\n\t" + gear.toString();
+            gearsString.append("\n\t").append(gear.toString());
         }
         return "Gearbox{\n" +
                 "gears=" + gearsString +
@@ -69,6 +69,7 @@ public class Gearbox {
         }
 
     private static class Gear {
+        // inner class
         private final int gearNum;
         private final double ratio;
 
