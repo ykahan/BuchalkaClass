@@ -15,6 +15,7 @@ public abstract class Animal {
 
     public abstract void eat();
     public abstract void breathe();
+    public abstract void walk();
 
     public String getName() {
         return name;
