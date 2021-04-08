@@ -7,7 +7,7 @@ public class Cat extends Animal{
 
     @Override
     public String intro() {
-        return "I am and a cat named " + getName() + " and ";
+        return "I am a cat named " + getName() + " and ";
     }
 
     @Override
