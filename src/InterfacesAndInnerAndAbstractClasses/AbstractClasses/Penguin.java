@@ -13,6 +13,7 @@ public class Penguin extends Bird{
 
     @Override
     public String intro() {
+        super.fly();
         return getName() + " the penguin ";
     }
 }
