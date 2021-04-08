@@ -6,18 +6,23 @@ public class Cat extends Animal{
     }
 
     @Override
-    public void eat() {
+    public String intro() {
+        return "I am and a cat named " + getName() + " and ";
+    }
 
+    @Override
+    public void eat() {
+        System.out.println(intro() + "I eat mice");
     }
 
     @Override
     public void breathe() {
-
+        System.out.println(intro() + "I breathe calmly");
     }
 
     @Override
     public void walk() {
-
+        System.out.println(intro() + "I do not need you to take me for a walk");
     }
 
     @Override
