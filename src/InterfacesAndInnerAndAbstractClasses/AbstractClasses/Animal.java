@@ -18,7 +18,7 @@ public abstract class Animal {
     public abstract void walk();
     public abstract String intro();
 
-    public String getName() {
+    protected String getName() {
         return name;
     }
 }
