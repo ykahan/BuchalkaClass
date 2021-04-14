@@ -11,7 +11,7 @@ public class YLinkedList {
         cursor = new Cursor();
     }
 
-    public int getLength(){
+    public int getLength() {
         return length;
     }
 
@@ -31,7 +31,8 @@ public class YLinkedList {
             return;
         }
         ListItem currentItem = head;
-        while (currentItem.hasNext()) {
+        boolean continueLoop = currentItem.hasNext();
+        while (continueLoop) {
             int location = currentItem.compareTo(newItem);
             if (location > 0) location = 1;
             if (location < 0) location = -1;
@@ -39,15 +40,18 @@ public class YLinkedList {
                 case 0:
                     insertBefore(currentItem.getNext(), newItem);
                     insertAfter(currentItem, newItem);
-                    return;
+                    continueLoop = false;
+                    break;
                 case -1:
                     insertAfter(currentItem.getPrevious(), newItem);
                     insertBefore(currentItem, newItem);
-                    return;
+                    continueLoop = false;
+                    break;
                 case 1:
                     if (!currentItem.hasNext()) {
                         insertAfter(currentItem, newItem);
-                        return;
+                        continueLoop = false;
+                        break;
                     } else {
                         currentItem = currentItem.getNext();
                     }
