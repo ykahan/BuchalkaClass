@@ -3,12 +3,16 @@ package InterfacesAndInnerAndAbstractClasses.AbstractClasses.Challenge;
 public class YLinkedList {
     private ListItem head;
     private Cursor cursor;
-    public int length;
+    private int length;
 
     public YLinkedList() {
         head = null;
         length = 0;
         cursor = new Cursor();
+    }
+
+    public int getLength(){
+        return length;
     }
 
     private void insertBefore(ListItem existingItem, ListItem newItem) {
