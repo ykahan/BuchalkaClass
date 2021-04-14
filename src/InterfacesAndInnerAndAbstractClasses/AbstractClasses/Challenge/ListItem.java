@@ -5,6 +5,8 @@ public abstract class ListItem {
     private ListItem previous;
     private Object value;
 
+    public abstract int compareTo(ListItem otherItem);
+
     public ListItem(Object value){
         this.value = value;
         this.next = null;
@@ -27,6 +29,16 @@ public abstract class ListItem {
         }
         newListItem.next = this;
         this.previous = newListItem;
+    }
+
+    public boolean hasNext(){
+        if(next != null) return true;
+        return false;
+    }
+
+    public boolean hasPrevious(){
+        if(previous != null) return true;
+        return false;
     }
 
     protected ListItem getNext() {
