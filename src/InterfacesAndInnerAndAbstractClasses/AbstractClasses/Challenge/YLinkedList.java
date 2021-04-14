@@ -27,7 +27,6 @@ public class YLinkedList {
 
     public void addItem(ListItem newItem) {
         if (addItemNearStartOfList(newItem)) {
-            length++;
             return;
         }
         ListItem currentItem = head;
@@ -64,15 +63,18 @@ public class YLinkedList {
     private boolean addItemNearStartOfList(ListItem newItem) {
         if (length == 0) {
             head = newItem;
+            length++;
             return true;
         }
         if (newItem.compareTo(head) < 1) {
             insertBefore(head, newItem);
+            length++;
             head = newItem;
             return true;
         }
         if (!head.hasNext()) {
             insertAfter(head, newItem);
+            length++;
             return true;
         }
         return false;
