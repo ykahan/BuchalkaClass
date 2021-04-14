@@ -5,10 +5,6 @@ public class StringListItem extends ListItem{
         super(value);
     }
 
-    public void addToList(){
-
-    }
-
     @Override
     public int compareTo(ListItem otherItem) {
         String thisValue = (String) this.getValue();
