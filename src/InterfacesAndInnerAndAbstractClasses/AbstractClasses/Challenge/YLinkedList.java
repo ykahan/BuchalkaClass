@@ -3,9 +3,11 @@ package InterfacesAndInnerAndAbstractClasses.AbstractClasses.Challenge;
 public class YLinkedList {
     private ListItem head;
     private Cursor cursor;
+    public int length;
 
     public YLinkedList() {
         head = null;
+        length = 0;
         cursor = new Cursor();
     }
 
@@ -19,19 +21,11 @@ public class YLinkedList {
         newItem.setPrevious(existingItem);
     }
 
-    public int length() {
-        if (head == null) return 0;
-        int count = 1;
-        ListItem currentItem = head;
-        while (currentItem.hasNext()) {
-            currentItem = currentItem.getNext();
-            count++;
-        }
-        return count;
-    }
-
     public void addItem(ListItem newItem) {
-        if (addItemNearStartOfList(newItem)) return;
+        if (addItemNearStartOfList(newItem)) {
+            length++;
+            return;
+        }
         ListItem currentItem = head;
         while (currentItem.hasNext()) {
             int location = currentItem.compareTo(newItem);
@@ -56,10 +50,11 @@ public class YLinkedList {
                     break;
             }
         }
+        length++;
     }
 
     private boolean addItemNearStartOfList(ListItem newItem) {
-        if (length() == 0) {
+        if (length == 0) {
             head = newItem;
             return true;
         }
