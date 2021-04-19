@@ -15,7 +15,7 @@ public class YLinkedList {
         return length;
     }
 
-    private boolean removeItem(ListItem li) {
+    private boolean removeItemByValue(ListItem li) {
         boolean hasPrevious = li.hasPrevious();
         boolean hasNext = li.hasNext();
         ListItem next = li.getNext();
@@ -34,18 +34,18 @@ public class YLinkedList {
         return true;
     }
 
-    public boolean removeItem(Object value) {
+    public boolean removeItemByValue(Object value) {
         boolean notNull = this.head != null;
         ListItem li = this.head;
         while (notNull) {
-            if (li.getValue() == value) return removeItem(li);
+            if (li.getValue() == value) return removeItemByValue(li);
             li = li.getNext();
             notNull = li != null;
         }
         return false;
     }
 
-    public boolean removeItem(int index) {
+    public boolean removeItemByIndex(int index) {
         if (index > -1 && index < this.length) {
             int current = 0;
             ListItem li = this.head;
@@ -54,7 +54,7 @@ public class YLinkedList {
                     li = li.getNext();
                     current++;
                 } else {
-                    return removeItem(li);
+                    return removeItemByValue(li);
                 }
             }
         }
