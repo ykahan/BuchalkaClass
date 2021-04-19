@@ -14,26 +14,28 @@ public abstract class ListItem {
     }
 
     protected void setNext(ListItem newListItem){
-        if(this.next != null) {
-            newListItem.next = this.next;
-            this.next.previous = newListItem;
-        }
-        newListItem.previous = this;
+//        if(this.next != null) {
+//            this.next.previous = newListItem;
+//        }
+//        newListItem.previous = this;
+//        this.next = newListItem;
         this.next = newListItem;
     }
 
     protected void setPrevious(ListItem newListItem){
-        if(this.previous != null){
-            newListItem.previous = this.previous;
-            this.previous.next = newListItem;
-        }
-        newListItem.next = this;
+//        if(this.previous != null){
+//            this.previous.next = newListItem;
+//            newListItem.previous = this.previous;
+//        }
+//        newListItem.next = this;
+//        this.previous = newListItem;
         this.previous = newListItem;
     }
 
     public boolean hasNext(){
-        if(next != null) return true;
-        return false;
+        if(next == null) return false;
+        if(next == this) return false;
+        return true;
     }
 
     public boolean hasPrevious(){

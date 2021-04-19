@@ -8,7 +8,13 @@ public class StringListItem extends ListItem{
     @Override
     public int compareTo(ListItem otherItem) {
         String thisValue = (String) this.getValue();
+        thisValue = thisValue.toUpperCase();
         String otherValue = (String) otherItem.getValue();
-        return thisValue.compareTo(otherValue);
+        otherValue = otherValue.toUpperCase();
+        int comp = thisValue.compareTo(otherValue);
+        // neg if thisValue precedes otherValue
+        // pos if thisValue follows otherValue
+        // 0 if two values identical
+        return comp;
     }
 }

@@ -15,7 +15,7 @@ public class YLinkedList {
         return length;
     }
 
-    private boolean removeItemByValue(ListItem li) {
+    private boolean removeItem(ListItem li) {
         boolean hasPrevious = li.hasPrevious();
         boolean hasNext = li.hasNext();
         ListItem next = li.getNext();
@@ -31,19 +31,20 @@ public class YLinkedList {
         } else {
             this.head = null;
         }
+        this.length--;
         return true;
     }
 
-    public boolean removeItemByValue(Object value) {
-        boolean notNull = this.head != null;
-        ListItem li = this.head;
-        while (notNull) {
-            if (li.getValue() == value) return removeItemByValue(li);
-            li = li.getNext();
-            notNull = li != null;
-        }
-        return false;
-    }
+//    public boolean removeItemByValue(Object value) {
+//        boolean notNull = this.head != null;
+//        ListItem li = this.head;
+//        while (notNull) {
+//            if (li.getValue() == value) return removeItemByValue(li);
+//            li = li.getNext();
+//            notNull = li != null;
+//        }
+//        return false;
+//    }
 
     public boolean removeItemByIndex(int index) {
         if (index > -1 && index < this.length) {
@@ -54,7 +55,7 @@ public class YLinkedList {
                     li = li.getNext();
                     current++;
                 } else {
-                    return removeItemByValue(li);
+                    return removeItem(li);
                 }
             }
         }
@@ -62,13 +63,33 @@ public class YLinkedList {
     }
 
     private void insertBefore(ListItem existingItem, ListItem newItem) {
+        if (existingItem.hasPrevious()) {
+            ListItem previousItem = existingItem.getPrevious();
+            previousItem.setNext(newItem);
+            newItem.setPrevious(previousItem);
+        }
         existingItem.setPrevious(newItem);
         newItem.setNext(existingItem);
     }
 
     private void insertAfter(ListItem existingItem, ListItem newItem) {
+        if (existingItem.hasNext()) {
+            ListItem nextItem = existingItem.getNext();
+            nextItem.setPrevious(newItem);
+            newItem.setNext(nextItem);
+        }
         existingItem.setNext(newItem);
         newItem.setPrevious(existingItem);
+    }
+
+    private boolean foundItem(ListItem newItem) {
+        boolean found = false;
+        ListItem currentItem = head;
+        while (!found && currentItem != null) {
+            found = currentItem.equals(newItem);
+            currentItem = currentItem.getNext();
+        }
+        return found;
     }
 
     public void addItem(ListItem newItem) {
@@ -79,32 +100,41 @@ public class YLinkedList {
         boolean continueLoop = currentItem.hasNext();
         while (continueLoop) {
             int location = currentItem.compareTo(newItem);
-            if (location > 0) location = 1;
-            if (location < 0) location = -1;
+            if (location > 0) location = 1;  // new item earlier
+            if (location < 0) location = -1;  // new item later
             switch (location) {
                 case 0:
-                    insertBefore(currentItem.getNext(), newItem);
-                    insertAfter(currentItem, newItem);
                     continueLoop = false;
                     break;
                 case -1:
-                    insertAfter(currentItem.getPrevious(), newItem);
-                    insertBefore(currentItem, newItem);
-                    continueLoop = false;
-                    break;
-                case 1:
                     if (!currentItem.hasNext()) {
                         insertAfter(currentItem, newItem);
+                        this.length++;
                         continueLoop = false;
                         break;
+                    }
+                    if (currentItem.getNext().compareTo(newItem) > 0) {
+                        insertBefore(currentItem.getNext(), newItem);
+                        this.length++;
+                        continueLoop = false;
+                        break;
+                    } else {
+                        currentItem = currentItem.getNext();
+                        break;
+                    }
+                case 1:
+                    if (!currentItem.hasNext()) {
+                        insertBefore(currentItem, newItem);
+                        length++;
+                        continueLoop = false;
                     } else {
                         currentItem = currentItem.getNext();
                     }
                     break;
             }
         }
-        length++;
     }
+
 
     private boolean addItemNearStartOfList(ListItem newItem) {
         if (length == 0) {
@@ -133,10 +163,10 @@ public class YLinkedList {
             ListItem li = head;
             StringBuilder sb = new StringBuilder();
             sb.append("\t" + this.length + " ListItem Value(s):\n");
-            while (li.hasNext()) {
-                sb.append(counter + ")\t" + (String)li.getValue() + "\n");
+            for (int i = 0; i < this.length; i++) {
+                Object value = li.getValue();
+                sb.append("\t" + (i + 1) + ")\t" + (String) value + "\n");
                 li = li.getNext();
-                counter++;
             }
             return sb.toString();
         } else {
