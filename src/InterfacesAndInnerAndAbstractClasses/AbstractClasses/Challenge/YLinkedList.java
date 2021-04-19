@@ -15,6 +15,52 @@ public class YLinkedList {
         return length;
     }
 
+    private boolean removeItem(ListItem li) {
+        boolean hasPrevious = li.hasPrevious();
+        boolean hasNext = li.hasNext();
+        ListItem next = li.getNext();
+        ListItem previous = li.getPrevious();
+        if (hasPrevious && hasNext) {
+            previous.setNext(next);
+            next.setPrevious(previous);
+        } else if (hasPrevious) {
+            previous.setNext(null);
+        } else if (hasNext) {
+            next.setPrevious(null);
+            this.head = next;
+        } else {
+            this.head = null;
+        }
+        return true;
+    }
+
+    public boolean removeItem(Object value) {
+        boolean notNull = this.head != null;
+        ListItem li = this.head;
+        while (notNull) {
+            if (li.getValue() == value) return removeItem(li);
+            li = li.getNext();
+            notNull = li != null;
+        }
+        return false;
+    }
+
+    public boolean removeItem(int index) {
+        if (index > -1 && index < this.length) {
+            int current = 0;
+            ListItem li = this.head;
+            while (current < this.length) {
+                if (current != index) {
+                    li = li.getNext();
+                    current++;
+                } else {
+                    return removeItem(li);
+                }
+            }
+        }
+        return false;
+    }
+
     private void insertBefore(ListItem existingItem, ListItem newItem) {
         existingItem.setPrevious(newItem);
         newItem.setNext(existingItem);
