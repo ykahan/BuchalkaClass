@@ -30,8 +30,5 @@ public class Main {
         System.out.println(yll.toString());
         yll.removeItemByIndex(5);
         System.out.println(yll.toString());
-//        yll.removeItemByValue("Tree");
-//        System.out.println(yll.toString());
-
     }
 }
