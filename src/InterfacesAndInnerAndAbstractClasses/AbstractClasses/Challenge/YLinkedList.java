@@ -125,4 +125,22 @@ public class YLinkedList {
         }
         return false;
     }
+
+    @Override
+    public String toString() {
+        if (head != null) {
+            int counter = 1;
+            ListItem li = head;
+            StringBuilder sb = new StringBuilder();
+            sb.append("\t" + this.length + " ListItem Value(s):\n");
+            while (li.hasNext()) {
+                sb.append(counter + ")\t" + (String)li.getValue() + "\n");
+                li = li.getNext();
+                counter++;
+            }
+            return sb.toString();
+        } else {
+            return "No ListItems found";
+        }
+    }
 }
