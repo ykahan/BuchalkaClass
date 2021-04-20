@@ -14,21 +14,10 @@ public abstract class ListItem {
     }
 
     protected void setNext(ListItem newListItem){
-//        if(this.next != null) {
-//            this.next.previous = newListItem;
-//        }
-//        newListItem.previous = this;
-//        this.next = newListItem;
         this.next = newListItem;
     }
 
     protected void setPrevious(ListItem newListItem){
-//        if(this.previous != null){
-//            this.previous.next = newListItem;
-//            newListItem.previous = this.previous;
-//        }
-//        newListItem.next = this;
-//        this.previous = newListItem;
         this.previous = newListItem;
     }
 
